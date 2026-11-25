@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Roboto+Mono:wght@400;500;700&family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#F3F2EA}
+a{color:#E5332A;text-decoration:none}
+a:hover{color:#1D1D1B}
+</style>
+</helmet>
+<div data-track style="position:relative;height:520vh;background:#F3F2EA;color:#1D1D1B">
+<div id="graphics" style="position:absolute;left:0;top:197vh;width:1px;height:100vh;pointer-events:none"></div>
+<div id="about" style="position:absolute;left:0;bottom:0;width:1px;height:100vh;pointer-events:none"></div>
+<div data-stage data-desk data-screen-label="Home" style="position:sticky;top:0;width:100%;height:100vh;overflow:hidden;background:#F3F2EA;color:#1D1D1B;font-family:'Roboto Mono',monospace;user-select:none">
+  <canvas data-cv style="position:absolute;inset:0;z-index:9;pointer-events:none;width:100%;height:100%;display:block"></canvas>
+  <div data-hero style="position:absolute;inset:0;z-index:2;will-change:opacity,filter,transform">
+  <canvas data-fx style="position:absolute;inset:0;z-index:4;width:100%;height:100%;display:block;pointer-events:none"></canvas>
+  <img data-bg data-fbg src="assets/akshata-bg.png" alt="" style="position:absolute;left:50%;bottom:-6vh;height:112vh;transform:translateX(-50%) scale(1.04);filter:blur(16px) saturate(1.05);opacity:0;transition:opacity 1.4s ease, filter 1.8s ease;pointer-events:none;will-change:transform">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 45%, rgba(243,242,234,0) 40%, rgba(243,242,234,.55) 100%);pointer-events:none"></div>
+  <div data-fgrid style="position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity 1.4s ease">
+    <span data-flabel style="position:absolute;left:0;top:0;transform:translate(10px,calc(-100% - 7px));display:flex;align-items:flex-start;gap:5px;font-family:'Roboto Mono',monospace;font-size:11px;line-height:1;letter-spacing:.32em;color:#F3F2EA;text-shadow:0 1px 10px rgba(29,29,27,.45);white-space:nowrap">HIGHLIGHTS<span data-fcount style="font-size:8px;letter-spacing:.06em;margin-top:-3px">(14)</span></span>
+  </div>
+  <div data-icons style="position:absolute;inset:0;z-index:3">
+    <div data-ic data-d="0.5" data-type="drive" data-src="19f0BtZcb-muI0Qfx3pHwBxk3hS6N-u48" data-local="assets/videos/v1.mp4" data-title="V1" data-ratio="1.7778" style="position:absolute;left:21%;top:19%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v1.jpg" data-drive="https://drive.google.com/thumbnail?id=19f0BtZcb-muI0Qfx3pHwBxk3hS6N-u48&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V1</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="drive" data-src="12VCZamLI_OxasJshRH6n8LNzXQFJcJdc" data-local="assets/videos/v2.mp4" data-title="V2" data-ratio="1.7778" style="position:absolute;left:89%;top:44%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v2.jpg" data-drive="https://drive.google.com/thumbnail?id=12VCZamLI_OxasJshRH6n8LNzXQFJcJdc&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V2</span>
+    </div>
+    <div data-ic data-d="0.7" data-type="drive" data-src="12Gp4Rr9qbqJPstHntwO7598CtKcnVYTL" data-local="assets/videos/v7.mp4" data-title="V7" data-ratio="0.5625" style="position:absolute;left:57%;top:17%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v7.jpg" data-drive="https://drive.google.com/thumbnail?id=12Gp4Rr9qbqJPstHntwO7598CtKcnVYTL&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V7</span>
+    </div>
+    <div data-ic data-d="0.5" data-type="drive" data-src="1Da3IM7Fz7JYnN_FnJrGbdAFunydua6zk" data-local="assets/videos/v8.mp4" data-title="V8" data-ratio="0.5625" style="position:absolute;left:68%;top:16%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v8.jpg" data-drive="https://drive.google.com/thumbnail?id=1Da3IM7Fz7JYnN_FnJrGbdAFunydua6zk&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V8</span>
+    </div>
+    <div data-ic data-d="0.6" data-type="drive" data-src="1WarMHjw4OOKgr6s6lm1e-RQS9pgTx98W" data-local="assets/videos/v10.mp4" data-title="V10" data-ratio="0.5625" style="position:absolute;left:78%;top:32%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v10.jpg" data-drive="https://drive.google.com/thumbnail?id=1WarMHjw4OOKgr6s6lm1e-RQS9pgTx98W&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V10</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="drive" data-src="1Yhi2esO-wHvc9Gvh--glLsh6slZdbZkF" data-local="assets/videos/v11.mp4" data-title="V11" data-ratio="0.5625" style="position:absolute;left:31%;top:21%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v11.jpg" data-drive="https://drive.google.com/thumbnail?id=1Yhi2esO-wHvc9Gvh--glLsh6slZdbZkF&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V11</span>
+    </div>
+    <div data-ic data-d="1" data-type="drive" data-src="1ReTbW2Ib8mUsojCO27to4ka7Q9YjHeE5" data-local="assets/videos/v12.mp4" data-title="V12" data-ratio="0.5625" style="position:absolute;left:72%;top:53%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v12.jpg" data-drive="https://drive.google.com/thumbnail?id=1ReTbW2Ib8mUsojCO27to4ka7Q9YjHeE5&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V12</span>
+    </div>
+    <div data-ic data-d="0.6" data-type="drive" data-src="1egpBaDD2TRoYyBZa2cismgaWVOUET8UP" data-local="assets/videos/v13.mp4" data-title="V13" data-ratio="1.7778" style="position:absolute;left:16%;top:56%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v13.jpg" data-drive="https://drive.google.com/thumbnail?id=1egpBaDD2TRoYyBZa2cismgaWVOUET8UP&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V13</span>
+    </div>
+    <div data-ic data-d="1.1" data-type="drive" data-src="1XVIU0lIG9KabvpmNLaXdjK2wZStnXO6R" data-local="assets/videos/v14.mp4" data-title="V14" data-ratio="1.7778" style="position:absolute;left:33%;top:57%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v14.jpg" data-drive="https://drive.google.com/thumbnail?id=1XVIU0lIG9KabvpmNLaXdjK2wZStnXO6R&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V14</span>
+    </div>
+    <div data-ic data-d="1" data-type="drive" data-src="1UHpz2rNHCvaVlspXqhsvKyzPvMGITJFX" data-local="assets/videos/v15.mp4" data-title="V15" data-ratio="1.7778" style="position:absolute;left:49%;top:69%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v15.jpg" data-drive="https://drive.google.com/thumbnail?id=1UHpz2rNHCvaVlspXqhsvKyzPvMGITJFX&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V15</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="drive" data-src="1725W-dJASIOa3tBJdjgZp9K4ogJUPhqQ" data-local="assets/projects/trend.mp4" data-title="V16" data-ratio="0.5625" style="position:absolute;left:59%;top:62%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v16-full.jpg" data-drive="https://drive.google.com/thumbnail?id=1725W-dJASIOa3tBJdjgZp9K4ogJUPhqQ&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V16</span>
+    </div>
+    <div data-ic data-d="0.7" data-type="drive" data-src="1ED-hSsnv_O_Q_NwN-e6ZAnK5xm0_fX9k" data-local="assets/projects/yourwindow.mp4" data-title="V17" data-ratio="0.8000" style="position:absolute;left:84%;top:60%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v17.jpg" data-drive="https://drive.google.com/thumbnail?id=1ED-hSsnv_O_Q_NwN-e6ZAnK5xm0_fX9k&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V17</span>
+    </div>
+    <div data-ic data-d="0.9" data-type="drive" data-src="1T3AmXljIn_3FocMfra44CYOdtTKTWtZv" data-local="assets/videos/v18.mp4" data-title="V18" data-ratio="0.5625" style="position:absolute;left:41%;top:25%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v18.jpg" data-drive="https://drive.google.com/thumbnail?id=1T3AmXljIn_3FocMfra44CYOdtTKTWtZv&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V18</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="drive" data-src="1YoMKn4IUXoRoyjQ_syr7ZDi5jBg2qveU" data-local="assets/videos/v19.mp4" data-title="V19" data-ratio="0.5625" style="position:absolute;left:69%;top:70%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/cover/v19.jpg" data-drive="https://drive.google.com/thumbnail?id=1YoMKn4IUXoRoyjQ_syr7ZDi5jBg2qveU&amp;sz=w800" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"><span style="position:absolute;right:4px;bottom:4px;z-index:3;pointer-events:none;width:0;height:0;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #F3F2EA;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))"></span></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">V19</span>
+    </div>
+  </div>
+  <div data-shade style="position:absolute;inset:0;z-index:6;background:#141413;opacity:0;pointer-events:none;will-change:opacity"></div>
+  </div>
+  <div data-gfx data-screen-label="Graphic Design" style="position:absolute;inset:0;z-index:5;transform:translate3d(0,110vh,0);background:#F3F2EA;overflow:hidden;border-top:1px solid rgba(255,255,255,.75);box-shadow:0 -22px 60px rgba(29,29,27,.32);pointer-events:none;will-change:transform">
+  <img data-fbg src="assets/akshata-bg.png" alt="" style="position:absolute;left:50%;bottom:-6vh;height:112vh;transform:translateX(-50%) scale(1.04);filter:blur(16px) saturate(1.05);pointer-events:none;will-change:transform">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 45%, rgba(243,242,234,0) 40%, rgba(243,242,234,.55) 100%);pointer-events:none"></div>
+  <div data-fgrid style="position:absolute;inset:0;pointer-events:none;opacity:1;transition:opacity 1.4s ease">
+    <span data-flabel style="position:absolute;left:0;top:0;transform:translate(10px,calc(-100% - 7px));display:flex;align-items:flex-start;gap:5px;font-family:'Roboto Mono',monospace;font-size:11px;line-height:1;letter-spacing:.32em;color:#F3F2EA;text-shadow:0 1px 10px rgba(29,29,27,.45);white-space:nowrap">HIGHLIGHTS<span data-fcount style="font-size:8px;letter-spacing:.06em;margin-top:-3px">(12)</span></span>
+  </div>
+  <div data-ptag style="position:absolute;left:50%;top:2.2vw;transform:translateX(-50%);font-size:11px;letter-spacing:.06em;color:#396000;white-space:nowrap">[ GRAPHIC DESIGN ]</div>
+  <div data-gicons style="position:absolute;inset:0;z-index:3">
+    <div data-ic data-d="0.6" data-type="img" data-src="assets/projects/apply.png" data-title="G1" style="position:absolute;left:20%;top:22%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-apply.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G1</span>
+    </div>
+    <div data-ic data-d="0.9" data-type="img" data-src="assets/projects/funded.png" data-title="G2" style="position:absolute;left:32%;top:17%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-funded.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G2</span>
+    </div>
+    <div data-ic data-d="1.1" data-type="img" data-src="assets/projects/learn.png" data-title="G3" style="position:absolute;left:45%;top:24%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-learn.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G3</span>
+    </div>
+    <div data-ic data-d="0.7" data-type="img" data-src="assets/projects/lp.png" data-title="G4" style="position:absolute;left:59%;top:18%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-lp.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G4</span>
+    </div>
+    <div data-ic data-d="0.5" data-type="img" data-src="assets/projects/macaron.png" data-title="G5" style="position:absolute;left:71%;top:25%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-macaron.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G5</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="img" data-src="assets/projects/meshki.png" data-title="G6" style="position:absolute;left:83%;top:33%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-meshki.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G6</span>
+    </div>
+    <div data-ic data-d="0.7" data-type="img" data-src="assets/projects/newbalance.png" data-title="G7" style="position:absolute;left:17%;top:44%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-newbalance.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G7</span>
+    </div>
+    <div data-ic data-d="1" data-type="img" data-src="assets/projects/pinacolada.png" data-title="G8" style="position:absolute;left:29%;top:53%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-pinacolada.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G8</span>
+    </div>
+    <div data-ic data-d="1.2" data-type="img" data-src="assets/projects/porsche.png" data-title="G9" style="position:absolute;left:67%;top:47%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-porsche.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G9</span>
+    </div>
+    <div data-ic data-d="0.6" data-type="img" data-src="assets/projects/shrimp.png" data-title="G10" style="position:absolute;left:80%;top:56%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-shrimp.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G10</span>
+    </div>
+    <div data-ic data-d="0.9" data-type="img" data-src="assets/projects/trades.png" data-title="G11" style="position:absolute;left:38%;top:68%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-trades.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G11</span>
+    </div>
+    <div data-ic data-d="0.8" data-type="img" data-src="assets/projects/zayn.png" data-title="G12" style="position:absolute;left:61%;top:69%;display:flex;flex-direction:column;align-items:center;gap:6px;width:130px;cursor:pointer">
+      <div style="position:relative;width:clamp(50px,5vw,90px);aspect-ratio:4/5;overflow:hidden;background:#1D1D1B;box-shadow:0 8px 18px rgba(29,29,27,.22)"><img decoding="async" src="assets/projects/thumb-zayn.png" alt="" style="width:100%;height:100%;object-fit:cover;display:block;pointer-events:none"></div>
+      <span data-lb style="padding:1px 6px;border-radius:3px;background:rgba(243,242,234,.88);font-size:10px;line-height:14px;letter-spacing:.04em;text-transform:uppercase;text-align:center;white-space:nowrap">G12</span>
+    </div>
+  </div>
+  <div data-shade style="position:absolute;inset:0;z-index:6;background:#141413;opacity:0;pointer-events:none;will-change:opacity"></div>
+  </div>
+  <div data-aboutp data-screen-label="About" style="position:absolute;inset:0;z-index:5;transform:translate3d(0,110vh,0);visibility:hidden;background:#F3F2EA;overflow:hidden;border-top:1px solid rgba(255,255,255,.75);box-shadow:0 -22px 60px rgba(29,29,27,.32);pointer-events:none;will-change:transform">
+  <img src="assets/akshata-bg.png" alt="" style="position:absolute;left:50%;bottom:-6vh;height:112vh;transform:translateX(-50%) scale(1.04);filter:blur(16px) saturate(1.05);pointer-events:none;will-change:transform">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 45%, rgba(243,242,234,0) 40%, rgba(243,242,234,.55) 100%);pointer-events:none"></div>
+  <div data-ptag style="position:absolute;left:50%;top:2.2vw;transform:translateX(-50%);font-size:11px;letter-spacing:.06em;color:#396000;white-space:nowrap">[ ABOUT ]</div>
+  <div data-awrap style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:84px 4vw 104px;box-sizing:border-box">
+    <div data-acard style="width:min(1180px,100%);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(24px,3.4vw,64px);padding:clamp(26px,3vw,52px);border-radius:22px;background:rgba(243,242,234,.76);backdrop-filter:blur(24px) saturate(1.3);-webkit-backdrop-filter:blur(24px) saturate(1.3);border:1px solid rgba(255,255,255,.65);box-shadow:0 30px 80px rgba(29,29,27,.18);color:#1D1D1B;font-family:'Schibsted Grotesk',Helvetica,sans-serif">
+      <div style="display:flex;flex-direction:column;gap:clamp(14px,1.4vw,22px);min-width:0">
+        <span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">VIDEO EDITOR &amp; MOTION GRAPHICS DESIGNER</span>
+        <h2 data-ah2 style="margin:0;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(44px,5.6vw,96px);line-height:.92;text-transform:uppercase;color:#396000">I’m Akshata Subedi.</h2>
+        <p data-ap style="margin:0;font-size:clamp(14px,1.1vw,17px);line-height:1.6;text-wrap:pretty">Video Editor and Motion Graphics Designer with 3 years of experience in video production and social media content creation for financial services, real estate, gaming and non-profit brands. Freelance TikTok edits reached 270K+ views across 12 videos, with two passing 155K and 100K views. In-house editor at a Dubai wealth management firm, running video post-production for 40+ videos a month, from raw footage to finished Instagram Reels, TikTok, YouTube and paid social ads, while leading motion graphics and graphic design. Advanced in Adobe Premiere Pro and After Effects; also shoots video.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><span style="display:flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border-radius:999px;background:rgba(29,29,27,.07);font-size:12px"><img src="assets/tools/pr.png" alt="" style="width:24px;height:24px;border-radius:23%;display:block">Premiere Pro</span><span style="display:flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border-radius:999px;background:rgba(29,29,27,.07);font-size:12px"><img src="assets/tools/ae.png" alt="" style="width:24px;height:24px;border-radius:23%;display:block">After Effects</span><span style="display:flex;align-items:center;padding:4px 12px;border-radius:999px;border:1px solid rgba(29,29,27,.18);font-size:12px">Also shoots video</span></div>
+      </div>
+      <div data-astats style="display:flex;flex-direction:column;justify-content:center;min-width:0">
+          <div style="display:flex;flex-direction:column;gap:6px;padding:18px 0;border-top:1px solid rgba(29,29,27,.12)"><span style="font-family:'Anton',Impact,sans-serif;font-size:clamp(40px,3.8vw,64px);line-height:.95;color:#396000">3 YRS</span><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:rgba(29,29,27,.7);text-wrap:pretty">VIDEO PRODUCTION &amp; SOCIAL CONTENT</span></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:18px 0;border-top:1px solid rgba(29,29,27,.12)"><span style="font-family:'Anton',Impact,sans-serif;font-size:clamp(40px,3.8vw,64px);line-height:.95;color:#396000">270K+</span><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:rgba(29,29,27,.7);text-wrap:pretty">TIKTOK VIEWS ACROSS 12 FREELANCE EDITS</span></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding:18px 0;border-top:1px solid rgba(29,29,27,.12)"><span style="font-family:'Anton',Impact,sans-serif;font-size:clamp(40px,3.8vw,64px);line-height:.95;color:#396000">40+</span><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:rgba(29,29,27,.7);text-wrap:pretty">VIDEOS A MONTH, IN-HOUSE AT A DUBAI WEALTH MANAGEMENT FIRM</span></div>
+          <div style="padding-top:18px;border-top:1px solid rgba(29,29,27,.12);font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;line-height:1.7;color:rgba(29,29,27,.7)">FINANCE · REAL ESTATE · GAMING · NON-PROFIT</div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <a data-logo href="Home.dc.html" style="position:absolute;z-index:8;left:2.4vw;top:1.6vw;font-family:'Caveat Brush',cursive;font-size:clamp(28px,2.8vw,48px);line-height:1;color:#396000;transform:rotate(-4deg)"><span data-a>A</span>kshata<span style="font-size:.5em;position:relative;top:-.9em;left:-.1em">♥</span></a>
+    <div data-box style="position:absolute;left:0;top:0;height:100%;aspect-ratio:9/16;pointer-events:none;z-index:7">
+      <img data-l="climber" src="assets/rope-ink-red.png?v=1" alt="Climber" style="position:absolute;inset:0;width:100%;height:100%;display:block;clip-path:polygon(43.75% 26.56%, 61.1% 26.56%, 61.1% 49.61%, 51.67% 49.61%, 51.67% 47.81%, 43.75% 47.81%);transform-origin:48.6% 27.34%;transform:translateY(-130vh);will-change:transform">
+    </div>
+    <div data-hint style="position:absolute;z-index:8;left:0;right:0;bottom:96px;text-align:center;font-family:'Roboto Mono',monospace;font-size:max(11px,0.95vw);letter-spacing:0.04em;color:#FFFFFF;text-shadow:0 1px 10px rgba(29,29,27,.55);opacity:0;transition:opacity .4s ease">[ SCROLL TO PULL ↓ ]</div>
+  <div data-skill role="dialog" aria-label="Skill details" style="position:absolute;z-index:25;left:12px;bottom:110px;width:min(360px,calc(100vw - 24px));opacity:0;visibility:hidden;pointer-events:none;transform-origin:50% 100%;transform:translateY(12px) scale(.96);transition:opacity .28s ease, transform .5s cubic-bezier(.2,.9,.25,1.1), left .5s cubic-bezier(.2,.8,.2,1), bottom .5s cubic-bezier(.2,.8,.2,1), visibility 0s linear .3s">
+    <span data-sarrow style="position:absolute;bottom:-7px;left:50%;width:14px;height:14px;margin-left:-7px;background:#F1F0E7;border-right:1px solid rgba(255,255,255,.8);border-bottom:1px solid rgba(255,255,255,.8);transform:rotate(45deg);transition:left .5s cubic-bezier(.2,.8,.2,1)"></span>
+    <div style="position:relative;display:flex;flex-direction:column;gap:16px;padding:18px 18px 18px;border-radius:16px;background:rgba(243,242,234,.9);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border:1px solid rgba(255,255,255,.75);box-shadow:0 24px 60px rgba(29,29,27,.24);color:#1D1D1B;font-family:'Schibsted Grotesk',Helvetica,sans-serif">
+      <div data-sr style="display:flex;align-items:center;gap:12px">
+        <img data-sicon src="assets/tools/pr.png" alt="" style="width:46px;height:46px;border-radius:23%;display:block;flex:none;box-shadow:0 4px 12px rgba(29,29,27,.18)">
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0;flex:1">
+          <span data-sname style="font-family:'Anton',Impact,sans-serif;font-size:24px;line-height:1;text-transform:uppercase;color:#396000">Premiere Pro</span>
+          <span data-slevel style="font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:.1em;color:#396000;color:rgba(29,29,27,.6)">ADVANCED</span>
+        </div>
+        <button data-sclose aria-label="Close" style="width:30px;height:30px;flex:none;display:flex;align-items:center;justify-content:center;border:1px solid rgba(29,29,27,.14);border-radius:50%;background:transparent;color:#1D1D1B;cursor:pointer;padding:0;transition:background .2s ease, color .2s ease, transform .3s ease" style-hover="background:#1D1D1B;color:#F3F2EA;transform:rotate(90deg)"><svg width="11" height="11" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path></svg></button>
+      </div>
+      <div data-sr style="display:flex;flex-direction:column;gap:7px;padding-top:14px;border-top:1px solid rgba(29,29,27,.1)"><span style="font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:.1em;color:#396000">WHAT I’VE DONE WITH IT</span><p data-sdone style="margin:0;font-size:14px;line-height:1.5;text-wrap:pretty">—</p></div>
+      <div data-sr style="display:flex;flex-direction:column;gap:9px"><span style="font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:.1em;color:#396000">WHAT I KNOW</span><div data-sknow style="display:flex;flex-wrap:wrap;gap:6px"></div></div>
+    </div>
+  </div>
+  <div data-viewer role="dialog" aria-modal="true" style="position:fixed;inset:0;z-index:30;pointer-events:none;visibility:hidden">
+    <div data-vbd style="position:absolute;inset:0;background:rgba(20,20,19,.86);backdrop-filter:blur(28px) saturate(1.15);-webkit-backdrop-filter:blur(28px) saturate(1.15);opacity:0;transition:opacity .6s ease"></div>
+    <div data-vmedia style="position:absolute;left:0;top:0;width:0;height:0;overflow:hidden;border-radius:2px;background:#1D1D1B;box-shadow:0 40px 120px rgba(0,0,0,.55)"></div>
+    <aside data-vpanel style="position:absolute;left:0;top:0;display:flex;flex-direction:column;background:#F3F2EA;color:#1D1D1B;border-radius:16px;overflow:hidden;opacity:0;font-family:'Schibsted Grotesk',Helvetica,sans-serif;box-shadow:0 40px 120px rgba(0,0,0,.35)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px 18px 26px;border-bottom:1px solid rgba(29,29,27,.1)">
+        <span data-vcat style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">[ VIDEO ]</span>
+        <div style="display:flex;align-items:center;gap:14px">
+          <span data-vidx style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:rgba(29,29,27,.55)">01 / 19</span>
+          <button data-vclose aria-label="Close" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(29,29,27,.14);border-radius:50%;background:transparent;color:#1D1D1B;cursor:pointer;padding:0;transition:background .2s ease, transform .3s ease" style-hover="background:#1D1D1B;color:#F3F2EA;transform:rotate(90deg)"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></button>
+        </div>
+      </div>
+      <div data-vbody style="flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:30px 26px 26px;display:flex;flex-direction:column;gap:28px">
+        <div data-vr>
+          <div data-vtitle style="font-family:'Anton',Impact,sans-serif;font-size:clamp(40px,3.6vw,60px);line-height:.95;text-transform:uppercase;color:#396000;text-wrap:balance">Title</div>
+          <div data-vsub style="margin-top:12px;font-family:'Roboto Mono',monospace;font-size:12px;letter-spacing:.04em;color:rgba(29,29,27,.6)">client — year</div>
+        </div>
+        <div data-vr style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid rgba(29,29,27,.1);border-bottom:1px solid rgba(29,29,27,.1)">
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">FORMAT</span><span data-vformat style="font-size:14px;line-height:1.4">—</span></div>
+          <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">ROLE</span><span data-vrole style="font-size:14px;line-height:1.4">—</span></div>
+        </div>
+        <div data-vr style="display:flex;flex-direction:column;gap:10px"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">THE IDEA</span><p data-videa style="margin:0;font-size:16px;line-height:1.55;text-wrap:pretty">—</p></div>
+        <div data-vr style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">WHAT I DID</span><ul data-vdid style="margin:0;padding:0;list-style:none;font-size:15px;line-height:1.45"></ul></div>
+        <div data-vr style="display:flex;flex-direction:column;gap:10px"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">TOOLS</span><div data-vtools style="display:flex;flex-wrap:wrap;gap:8px"></div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-top:1px solid rgba(29,29,27,.1)">
+        <button data-vprev style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:16px 22px 18px 26px;border:0;border-right:1px solid rgba(29,29,27,.1);background:transparent;color:#1D1D1B;cursor:pointer;text-align:left;font:inherit;transition:background .25s ease" style-hover="background:rgba(57,96,0,.08)"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">← PREV</span><span data-vprevt style="font-size:13px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">—</span></button>
+        <button data-vnext style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;padding:16px 26px 18px 22px;border:0;background:transparent;color:#1D1D1B;cursor:pointer;text-align:right;font:inherit;transition:background .25s ease" style-hover="background:rgba(57,96,0,.08)"><span style="font-family:'Roboto Mono',monospace;font-size:11px;letter-spacing:.08em;color:#396000">NEXT →</span><span data-vnextt style="font-size:13px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">—</span></button>
+      </div>
+    </aside>
+  </div>
+  <nav data-dock aria-label="Toolkit" style="position:absolute;z-index:6;left:50%;bottom:20px;transform:translateX(-50%);display:flex;align-items:flex-end;gap:clamp(4px,.5vw,7px);padding:clamp(6px,.6vw,8px) clamp(7px,.8vw,10px);border-radius:clamp(12px,1.3vw,18px);max-width:calc(100vw - 24px);box-sizing:border-box">
+    <span data-dockbg style="position:absolute;inset:0;z-index:-1;border-radius:inherit;background:rgba(243,242,234,.55);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid rgba(255,255,255,.6);box-shadow:0 10px 30px rgba(29,29,27,.14);pointer-events:none"></span>
+    <span data-tip style="position:absolute;left:0;bottom:100%;margin-bottom:14px;padding:4px 9px;border-radius:6px;background:rgba(29,29,27,.86);color:#F3F2EA;font-size:11px;line-height:15px;white-space:nowrap;opacity:0;transform:translateX(-50%);transition:opacity .12s ease;pointer-events:none"></span>
+    <span data-dk data-name="After Effects" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/ae.png" alt="After Effects" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Premiere Pro" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/pr.png" alt="Premiere Pro" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Audition" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/au.png" alt="Audition" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Photoshop" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/ps.png" alt="Photoshop" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Illustrator" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/ai.png" alt="Illustrator" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Lightroom" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/lr.png" alt="Lightroom" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Firefly" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/ff.png" alt="Firefly" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span style="flex:none;width:1px;height:clamp(20px,2.6vw,34px);margin:0 2px 3px;background:rgba(29,29,27,.18)"></span>
+    <span data-dk data-name="DaVinci Resolve" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/dr.png" alt="DaVinci Resolve" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Final Cut Pro" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/fc.png" alt="Final Cut Pro" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="CapCut" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/cc.png" alt="CapCut" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Descript" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/de.png" alt="Descript" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span style="flex:none;width:1px;height:clamp(20px,2.6vw,34px);margin:0 2px 3px;background:rgba(29,29,27,.18)"></span>
+    <span data-dk data-name="Figma" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/fg.png" alt="Figma" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Canva" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/ca.png" alt="Canva" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span style="flex:none;width:1px;height:clamp(20px,2.6vw,34px);margin:0 2px 3px;background:rgba(29,29,27,.18)"></span>
+    <span data-dk data-name="Runway" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/rw.png" alt="Runway" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Midjourney" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/mj.png" alt="Midjourney" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Kling AI" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/kl.png" alt="Kling AI" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="Veo" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/gv.png" alt="Veo" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+    <span data-dk data-name="ElevenLabs" style="position:relative;display:block;flex:none;width:clamp(26px,3.3vw,44px);aspect-ratio:1;border-radius:23%;overflow:hidden;box-shadow:0 2px 6px rgba(29,29,27,.18);transform-origin:50% 100%"><img src="assets/tools/el.png" alt="ElevenLabs" style="width:100%;height:100%;display:block;pointer-events:none"></span>
+  </nav>
+  <nav data-topnav style="position:absolute;z-index:6;right:2.4vw;top:2.2vw;display:flex;gap:22px;font-size:11px;letter-spacing:.06em">
+    <a href="Home.dc.html" style="color:#1D1D1B" style-hover="color:#396000">VIDEO</a>
+    <a href="#graphics" style="color:#1D1D1B" style-hover="color:#396000">GRAPHICS</a>
+    <a href="#about" style="color:#1D1D1B" style-hover="color:#396000">ABOUT</a>
+  </nav>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    document.querySelectorAll('[data-fcount]').forEach(s => { const pg = s.closest('[data-hero],[data-gfx]'); if (pg) s.textContent = '(' + pg.querySelectorAll('[data-ic]').length + ')'; });
+    document.querySelectorAll('img[data-drive]').forEach(im => {
+      const fail = () => {
+        if (im.dataset.step !== '1') { im.dataset.step = '1'; im.src = im.dataset.drive; return; }
+        im.style.visibility = 'hidden';
+        const t = im.parentElement; t.style.background = 'linear-gradient(160deg,#4a7a0a,#396000 55%,#253f00)';
+        const lab = t.closest('[data-ic]').dataset.title;
+        if (!t.querySelector('[data-ph]')) { const s = document.createElement('span'); s.dataset.ph = '1'; s.textContent = lab; s.style.cssText = "position:absolute;left:8px;top:8px;font-family:'Anton',Impact,sans-serif;font-size:18px;letter-spacing:.02em;color:#F3F2EA;pointer-events:none"; t.appendChild(s); }
+      };
+      im.addEventListener('error', fail);
+      if (im.complete && im.naturalWidth === 0) fail();
+    });
+    const desk = document.querySelector('[data-desk]'), bg = document.querySelector('[data-bg]');
+    const icons = [...document.querySelectorAll('[data-ic]')];
+    const dockItems = [...document.querySelectorAll('[data-dk]')], dock = document.querySelector('[data-dock]');
+    const ease = 'cubic-bezier(.2,.9,.25,1.2)';
+    icons.forEach((el, i) => {
+      el.style.transform = 'translate(-50%,-50%) scale(.2)'; el.style.opacity = 0;
+      el.style.transition = 'opacity .5s ease ' + (0.5 + i * 0.045) + 's, transform .7s ' + ease + ' ' + (0.5 + i * 0.045) + 's';
+    });
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      bg.style.opacity = 1; bg.style.filter = 'blur(16px) saturate(1.05)';
+      this.el.hero.querySelectorAll('[data-fgrid]').forEach(n => { n.style.opacity = 1; });
+      icons.forEach(el => { el.style.opacity = 1; el.style.transform = 'translate(-50%,-50%)'; });
+      setTimeout(() => icons.forEach(el => { el.style.transition = 'none'; }), 2200);
+    }));
+    bg.style.filter = 'blur(40px) saturate(1.05)';
+
+    let mx = 0, my = 0, cx = 0, cy = 0;
+    this.onMove = e => { mx = e.clientX / innerWidth - 0.5; my = e.clientY / innerHeight - 0.5; };
+    window.addEventListener('pointermove', this.onMove);
+    const loop = () => {
+      this.raf = requestAnimationFrame(loop);
+      cx += (mx - cx) * 0.06; cy += (my - cy) * 0.06;
+      const t = performance.now() / 1000;
+      const c0 = this.cov0 || 0, gOn = this.el.gfx.style.visibility !== 'hidden' && (this.cov1 || 0) < 0.999;
+      if (c0 < 0.999) { bg.style.transform = 'translateX(-50%) translate(' + (-cx * 18).toFixed(2) + 'px,' + (-cy * 12).toFixed(2) + 'px) scale(1.04)'; this.focusUpd(this.el.hero, -cx * 18, -cy * 12); }
+      if (gOn) this.focusUpd(this.el.gfx, 0, 0);
+      if (icons[0].style.transition !== 'none') return;
+      icons.forEach((el, i) => {
+        if (el === this.hover) return;
+        if (el._inG ? !gOn : c0 >= 0.999) return;
+        const d = +el.dataset.d || 1;
+        const fx = Math.sin(t * 0.6 + i * 1.7) * 3, fy = Math.cos(t * 0.5 + i * 2.3) * 4;
+        el.style.transform = 'translate(-50%,-50%) translate(' + (cx * 46 * d + fx) + 'px,' + (cy * 34 * d + fy) + 'px)';
+      });
+    };
+    this.raf = requestAnimationFrame(loop);
+
+    icons.forEach(el => { el._inG = !!el.closest('[data-gfx]'); });
+    const select = el => icons.forEach(n => {
+      const lb = n.querySelector('[data-lb]'), on = n === el;
+      lb.style.background = on ? '#396000' : 'rgba(243,242,234,.88)';
+      lb.style.color = on ? '#F3F2EA' : '#1D1D1B';
+    });
+    icons.forEach(el => {
+      el.addEventListener('pointerdown', e => { e.stopPropagation(); select(el); });
+      el.addEventListener('pointerenter', () => { this.hover = el; el.style.transition = 'transform .25s ease'; el.style.transform = el.style.transform + ' scale(1.12)'; el.style.zIndex = 2; });
+      el.addEventListener('pointerleave', () => { this.hover = null; el.style.zIndex = ''; setTimeout(() => { el.style.transition = 'none'; }, 250); });
+    });
+    desk.addEventListener('pointerdown', () => select(null));
+
+    const tip = dock.querySelector('[data-tip]'), dbg = dock.querySelector('[data-dockbg]');
+    const kids = [...dock.children].filter(n => n !== tip && n !== dbg);
+    const MAXS = 0.62;
+    let base = null, px = null, sx = null, tipEl = null, tipA = 0;
+    const st = kids.map(() => ({ s: 1 }));
+    const measure = () => { const dr = dock.getBoundingClientRect(); base = kids.map(n => { const r = n.getBoundingClientRect(); return { c: r.left + r.width / 2 - dr.left, w: r.width, dk: n.hasAttribute('data-dk') }; }); base.W = dr.width; base.L = dr.left; };
+    window.addEventListener('resize', () => { base = null; });
+    dock.addEventListener('pointermove', e => { if (!base) measure(); px = e.clientX - base.L; if (sx == null) sx = px; });
+    dock.addEventListener('pointerleave', () => { px = null; });
+    const dockLoop = () => {
+      this.draf = requestAnimationFrame(dockLoop);
+      if (this.dockOff) return;
+      if (px == null && st.every(o => Math.abs(o.s - 1) < 0.0005)) { if (this.dockIdle) return; this.dockIdle = true; } else this.dockIdle = false;
+      if (!base) { if (px == null && st.every(o => Math.abs(o.s - 1) < 0.001)) return; measure(); }
+      if (px != null) sx += (px - sx) * 0.35;
+      const R = base.find(b => b.dk).w * 3;
+      let total = 0;
+      const ex = base.map((b, i) => {
+        const g = (px == null || !b.dk) ? 0 : Math.max(0, 1 - Math.abs(sx - b.c) / R);
+        const target = 1 + MAXS * (0.5 - 0.5 * Math.cos(Math.PI * g));
+        st[i].s += (target - st[i].s) * 0.22;
+        const e2 = (st[i].s - 1) * b.w; total += e2; return e2;
+      });
+      let acc = 0, best = null, bd = 1e9;
+      kids.forEach((n, i) => {
+        const off = acc + ex[i] / 2 - total / 2; acc += ex[i];
+        n.style.transform = 'translate3d(' + off.toFixed(2) + 'px,0,0) scale(' + st[i].s.toFixed(4) + ')';
+        if (base[i].dk && px != null) { const d = Math.abs(px - base[i].c); if (d < bd && d < base[i].w * 0.7) { bd = d; best = i; } }
+      });
+      dbg.style.transform = 'scaleX(' + ((base.W + total) / base.W).toFixed(4) + ')';
+      tipA += ((best != null ? 1 : 0) - tipA) * 0.25;
+      if (best != null) {
+        let o2 = 0; for (let j = 0; j < best; j++) o2 += ex[j];
+        tip.textContent = kids[best].dataset.name;
+        tip.style.left = (base[best].c + o2 + ex[best] / 2 - total / 2) + 'px';
+        tip.style.bottom = (100 + (st[best].s - 1) * 100) + '%';
+      }
+      tip.style.opacity = tipA.toFixed(3);
+    };
+    kids.forEach(n => { n.style.transition = 'none'; n.style.willChange = 'transform'; });
+    tip.style.transition = 'none';
+    this.draf = requestAnimationFrame(dockLoop);
+    const q = s => document.querySelector(s);
+    this.el = { box: q('[data-box]'), stage: q('[data-stage]'), track: q('[data-track]'), hint: q('[data-hint]'),
+      cv: q('[data-cv]'), a: q('[data-a]'), climber: q('[data-l="climber"]'), hero: q('[data-hero]'), gfx: q('[data-gfx]'), aboutP: q('[data-aboutp]'), ab: [...document.querySelectorAll('[data-ab]')] };
+    try { history.scrollRestoration = 'manual'; } catch (_) {}
+    const se0 = document.scrollingElement || document.documentElement; se0.scrollTop = 0; document.body.scrollTop = 0;
+    this.iv = { y: null, kUp: 0, kDown: 0, done: false };
+    this.ph = { th: 0, w: 0, speed: 0 };
+    this.sims = {};
+    const clamp = v => Math.max(0, Math.min(1, v));
+    const out = u => 1 - Math.pow(1 - u, 3);
+    const t0 = performance.now() + 300;
+    const tick = now => {
+      this.raf = requestAnimationFrame(tick);
+      const G0 = this.geom(), t = now - t0, H = G0.H, vh = G0.vh, iv = this.iv, ph = this.ph;
+      if (now / 1000 - G0.t > 2) G0.dirty = true;
+      const dt = Math.min(0.05, (now - (this.lastNow || now)) / 1000); this.lastNow = now;
+      if (t < 0) return;
+      if (!iv.done) {
+        if (t < 700) { const f = t / 700; iv.y = -1.3 * vh * (1 - f * f); iv.kUp = 0; }
+        else if (t < 850) { const u = (t - 700) / 150; iv.y = 0.045 * H * out(u); iv.kUp = out(u); }
+        else { const u = clamp((t - 850) / 1100); iv.y = 0.045 * H * Math.exp(-5 * u) * Math.cos(u * Math.PI * 3.2) * (1 - u); iv.kUp = 1; }
+        iv.kDown = out(clamp((t - 1750) / 650));
+        if (t > 2500) { iv.y = 0; iv.done = true; }
+      }
+      const Praw = this.progress(), ts = now / 1000;
+      this.Ps = this.Ps == null ? Praw : this.Ps + (Praw - this.Ps) * (1 - Math.exp(-dt * 7));
+      if (Math.abs(Praw - this.Ps) < 0.00015) this.Ps = Praw;
+      const P = this.Ps;
+      const S = this.stg || (this.stg = [{ a: 0, b: 0.40, brk: 0.44, un: 0.42 }, { a: 0.50, b: 0.92, brk: 0.95, un: 0.935 }]);
+      if (!S[0].br && iv.done && P >= S[0].brk) S[0].br = { t0: ts };
+      else if (S[0].br && P < S[0].un) { S[0].br = null; this.sims.low0 = null; }
+      if (!S[1].br && S[0].br && S[1].kd >= 1 && P >= S[1].brk) S[1].br = { t0: ts };
+      else if (S[1].br && (P < S[1].un || !S[0].br)) { S[1].br = null; this.sims.low1 = null; }
+      const st = S[0].br ? S[1] : S[0], p = clamp((P - st.a) / (st.b - st.a));
+      if (this.lastSt !== st) { this.lastSt = st; this.lastP = p; }
+      this.stepAuto(now);
+      if (iv.done && !this.as) {
+        const RG = 0.47;
+        if (this.dir < 0 && S[1].br && Praw < S[1].brk - 0.004) this.autoScroll(RG);
+        else if (this.dir < 0 && S[0].br && !S[1].br && Praw < S[0].brk - 0.004) this.autoScroll(0);
+        else if (!this.snapped && now - (this.lastScrollT || 0) > 420) {
+          this.snapped = true;
+          let tg = null;
+          if (Praw < S[0].brk) tg = Praw / S[0].brk > 0.35 ? RG : 0;
+          else if (Praw < S[1].a) tg = RG;
+          else if (Praw < S[1].brk) tg = (Praw - S[1].a) / (S[1].brk - S[1].a) > 0.35 ? 1 : RG;
+          else tg = 1;
+          if (tg != null && Math.abs(tg - Praw) > 0.003) this.autoScroll(tg);
+        }
+      }
+      const dp = this.lastP == null ? 0 : p - this.lastP; this.lastP = p;
+      ph.w += dp * 9;
+      ph.speed += (Math.abs(dp) / Math.max(dt, 0.001) - ph.speed) * 0.08;
+      ph.w += (-38 * ph.th - 2.2 * ph.w) * dt; ph.th += ph.w * dt;
+      this.draw(now / 1000, p, P);
+    };
+    this.raf = requestAnimationFrame(tick);
+    this.initFx();
+    this.initViewer();
+    this.initSkills();
+    this.onScroll = () => {
+      const se = document.scrollingElement || document.documentElement, y = Math.max(se.scrollTop || 0, document.body.scrollTop || 0, window.scrollY || 0);
+      if (!this.as) { const d = y - (this.scrollY || 0); if (Math.abs(d) > 0.5) { this.dir = Math.sign(d); this.lastScrollT = performance.now(); this.snapped = false; } }
+      this.scrollY = y;
+    };
+    this.onWheelLock = e => { if (this.as && !e.target.closest('[data-viewer],[data-acard],[data-skill]')) e.preventDefault(); };
+    window.addEventListener('wheel', this.onWheelLock, { passive: false }); window.addEventListener('touchmove', this.onWheelLock, { passive: false });
+    const navTo = { 'Home.dc.html': 0, '#graphics': 0.47, '#about': 1 };
+    document.querySelectorAll('nav a[href]').forEach(a => { const t = navTo[a.getAttribute('href')]; if (t == null) return; a.addEventListener('click', ev => { ev.preventDefault(); this.autoScroll(t); }); });
+    window.addEventListener('scroll', this.onScroll, { passive: true, capture: true }); this.onScroll();
+    this.onResize = () => { cancelAnimationFrame(this.lraf); this.lraf = requestAnimationFrame(() => { this.applyLayout(); this.onScroll(); }); };
+    window.addEventListener('resize', this.onResize); window.addEventListener('orientationchange', this.onResize);
+    this.applyLayout();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (this._geo) this._geo.dirty = true; this.applyLayout(); });
+  }
+  focusUpd(wrap, ox, oy) {
+    const f = wrap._f || (wrap._f = { lab: wrap.querySelector('[data-flabel]') }), g = this._geo;
+    if (!f.lab || !g) return;
+    const bh = 1.12 * g.cssVh * 1.04, bw = bh * (1058 / 1282), bx = g.SW / 2 - bw / 2 + ox, by = g.cssVh * 0.5 - bh / 2 + oy;
+    const tr = 'translate(' + (bx + 0.34 * bw + 10).toFixed(1) + 'px,' + (by + 0.16 * bh).toFixed(1) + 'px) translateY(calc(-100% - 7px))';
+    if (f.tr !== tr) { f.tr = tr; f.lab.style.transform = tr; }
+  }
+  geom() {
+    const g = this._geo;
+    if (g && !g.dirty) return g;
+    const e = this.el, sr = e.stage.getBoundingClientRect(), ar = e.a.getBoundingClientRect();
+    const m = document.createElement('div'); m.style.cssText = 'position:fixed;top:0;height:100vh;width:0;visibility:hidden'; document.body.appendChild(m); const cssVh = m.offsetHeight; m.remove();
+    return (this._geo = { H: e.box.offsetHeight || e.stage.clientHeight, W: e.box.offsetWidth, vh: e.stage.clientHeight, cssVh, SW: e.stage.clientWidth,
+      sr: { left: sr.left, top: sr.top }, ar: { left: ar.left, top: ar.top, width: ar.width, height: ar.height }, trackH: e.track.offsetHeight, t: performance.now() / 1000, dirty: false });
+  }
+  applyLayout() {
+    const W = innerWidth, Hh = this.el ? this.el.stage.clientHeight : innerHeight, narrow = W < 760 || Hh < 520;
+    if (this.el) this.el.stage.style.height = CSS.supports('height', '100svh') ? '100svh' : '100vh';
+    ['[data-icons]', '[data-gicons]'].forEach(sel => {
+      const box = document.querySelector(sel); if (!box) return;
+      const ics = [...box.children].filter(n => n.hasAttribute('data-ic')), n = ics.length;
+      const cols = Math.max(3, Math.min(8, Math.round(Math.sqrt(n * (W / Hh) * 1.6)))), rows = Math.ceil(n / cols);
+      ics.forEach((el, i) => {
+        if (!el.dataset.ox) { el.dataset.ox = el.style.left; el.dataset.oy = el.style.top; }
+        const tileEl = el.firstElementChild, lb = el.querySelector('[data-lb]');
+        if (!narrow) { el.style.left = el.dataset.ox; el.style.top = el.dataset.oy; tileEl.style.width = 'clamp(50px,5vw,90px)'; lb.style.maxWidth = 'none'; lb.style.overflow = 'visible'; lb.style.textOverflow = 'clip'; lb.style.fontSize = '10px'; el.style.width = '130px'; return; }
+        const k = (i * 7) % n, c = k % cols, rw = Math.floor(k / cols), jx = ((i * 37) % 11 / 11 - 0.5) * 0.3, jy = ((i * 53) % 13 / 13 - 0.5) * 0.25;
+        el.style.left = (6 + (88 / cols) * (c + 0.5 + jx)).toFixed(2) + '%';
+        el.style.top = (15 + (62 / rows) * (rw + 0.5 + jy)).toFixed(2) + '%';
+        const cw = W * 0.88 / cols, ch = Hh * 0.62 / rows, tw = Math.max(34, Math.min(64, cw * 0.62, (ch - 22) * 0.8));
+        tileEl.style.width = tw.toFixed(1) + 'px'; el.style.width = cw.toFixed(1) + 'px';
+        lb.style.maxWidth = Math.max(48, cw - 6).toFixed(0) + 'px'; lb.style.overflow = 'hidden'; lb.style.textOverflow = 'ellipsis'; lb.style.fontSize = '9px';
+      });
+    });
+    document.querySelectorAll('[data-ptag]').forEach(t => { t.style.top = narrow ? '60px' : '2.2vw'; });
+    const aw = document.querySelector('[data-awrap]'), ac = document.querySelector('[data-acard]');
+    if (aw && ac) {
+      const one = W < 900, tiny = W < 400;
+      Object.assign(aw.style, { padding: narrow ? '76px 12px 96px' : (Hh < 760 ? '72px 4vw 96px' : '84px 4vw 104px'), alignItems: 'flex-start', justifyContent: 'flex-start', overflowY: 'auto', overflowX: 'hidden', overscrollBehavior: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none' });
+      ac.style.margin = 'auto'; ac.style.gridTemplateColumns = one ? 'minmax(0,1fr)' : 'minmax(0,1.55fr) minmax(0,1fr)';
+      ac.style.padding = narrow ? (tiny ? '20px 18px' : '24px 22px') : 'clamp(26px,3vw,52px)'; ac.style.borderRadius = narrow ? '18px' : '22px';
+      ac.style.gap = one ? '22px' : 'clamp(24px,3.4vw,64px)';
+      const h2 = ac.querySelector('[data-ah2]'), pa = ac.querySelector('[data-ap]'), st = ac.querySelector('[data-astats]');
+      if (h2) h2.style.fontSize = narrow ? 'clamp(34px,10.5vw,60px)' : (Hh < 760 ? 'clamp(40px,4.6vw,80px)' : 'clamp(44px,5.6vw,96px)');
+      if (pa) { pa.style.fontSize = narrow ? (tiny ? '13.5px' : '14.5px') : 'clamp(14px,1.1vw,17px)'; pa.style.lineHeight = narrow ? '1.55' : '1.6'; }
+      if (st) {
+        const kids = [...st.children], last = kids[kids.length - 1];
+        Object.assign(st.style, one ? { display: 'grid', gridTemplateColumns: 'repeat(3,minmax(0,1fr))', columnGap: tiny ? '10px' : '16px' } : { display: 'flex', gridTemplateColumns: '', columnGap: '' });
+        kids.forEach(k => { k.style.padding = one ? '14px 0' : (k === last ? '' : '18px 0'); if (k === last) { k.style.gridColumn = one ? '1 / -1' : ''; k.style.paddingTop = one ? '14px' : '18px'; } const n = k.firstElementChild; if (n && k !== last) { n.style.fontSize = one ? (tiny ? '26px' : 'clamp(28px,7vw,48px)') : 'clamp(40px,3.8vw,64px)'; const lab = n.nextElementSibling; if (lab) lab.style.fontSize = one ? '9.5px' : '11px'; } });
+      }
+    }
+    const logo = document.querySelector('[data-logo]'), tn = document.querySelector('[data-topnav]');
+    if (logo) { logo.style.left = narrow ? '16px' : '2.4vw'; logo.style.top = narrow ? '14px' : '1.6vw'; }
+    if (tn) { tn.style.right = narrow ? '16px' : '2.4vw'; tn.style.top = narrow ? '24px' : '2.2vw'; tn.style.gap = W < 360 ? '10px' : narrow ? '14px' : '22px'; tn.style.fontSize = W < 360 ? '9.5px' : '11px'; }
+    const dock = document.querySelector('[data-dock]'), dbg = dock && dock.querySelector('[data-dockbg]');
+    if (dock) {
+      const tight = dock.scrollWidth > W - 20 || W < 760;
+      this.dockOff = tight;
+      if (tight) {
+        dock.style.overflowX = 'auto'; dock.style.width = 'calc(100vw - 24px)'; dock.style.justifyContent = 'flex-start'; dock.style.scrollbarWidth = 'none'; dock.style.touchAction = 'pan-x';
+        dock.style.background = 'rgba(243,242,234,.72)'; dock.style.backdropFilter = 'blur(18px) saturate(1.4)'; dock.style.webkitBackdropFilter = 'blur(18px) saturate(1.4)'; dock.style.border = '1px solid rgba(255,255,255,.6)';
+        if (dbg) dbg.style.display = 'none';
+        [...dock.children].forEach(k => { if (k.hasAttribute('data-dk') || !k.hasAttribute('data-tip')) k.style.transform = ''; });
+      } else {
+        ['overflowX', 'width', 'justifyContent', 'scrollbarWidth', 'touchAction', 'background', 'backdropFilter', 'webkitBackdropFilter', 'border'].forEach(p => { dock.style[p] = ''; });
+        if (dbg) dbg.style.display = '';
+      }
+    }
+    const hint = document.querySelector('[data-hint]'); if (hint) hint.style.bottom = narrow ? '88px' : '96px';
+    if (this._geo) this._geo.dirty = true;
+  }
+  autoScroll(toP) {
+    const g = this.geom(), max = Math.max(1, g.trackH - g.vh), from = this.scrollY || 0, to = Math.max(0, Math.min(1, toP)) * max;
+    if (Math.abs(to - from) < 2) return;
+    this.as = { from, to, t0: performance.now(), dur: Math.max(650, Math.min(1400, Math.abs(to - from) / max * 2200)) };
+    this.dir = 0;
+  }
+  stepAuto(now) {
+    const a = this.as; if (!a) return;
+    const u = Math.min(1, (now - a.t0) / a.dur), e = u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2;
+    const y = a.from + (a.to - a.from) * e, se = document.scrollingElement || document.documentElement;
+    se.scrollTop = y; if (document.body.scrollTop || se.scrollTop !== Math.round(y)) document.body.scrollTop = y;
+    this.scrollY = y;
+    if (u >= 1) { this.as = null; this.snapped = true; this.lastScrollT = now; }
+  }
+  progress() {
+    const g = this.geom(), max = Math.max(1, g.trackH - g.vh);
+    return this.iv.done ? Math.max(0, Math.min(1, (this.scrollY || 0) / max)) : 0;
+  }
+  setAbout(on) {
+    if (this.aboutOn === on) return; this.aboutOn = on;
+    if (this.fx) this.fx.setAbout(on); else this.el.ab.forEach(n => { n.style.opacity = on ? 1 : 0; });
+  }
+  simFree(key, A, N, rest, fx, fy, time, s, dir) {
+    let R = this.sims[key];
+    if (!R) R = this.sims[key] = Array.from({ length: N }, (_, i) => { const x = A[0] + dir[0] * rest * i, y = A[1] + dir[1] * rest * i; return { x, y, px: x, py: y }; });
+    R[0].x = R[0].px = A[0]; R[0].y = R[0].py = A[1];
+    for (let i = 1; i < N; i++) {
+      const n = R[i], f = i / (N - 1);
+      const vx = (n.x - n.px) * 0.96, vy = (n.y - n.py) * 0.96;
+      const w = (Math.sin(time * 1.6 + i * 0.4) * 0.06 + Math.sin(time * 3.1 + i * 0.9) * 0.04) * s * f;
+      n.px = n.x; n.py = n.y; n.x += vx + fx * f + w; n.y += vy + fy * f + w * 0.5;
+    }
+    for (let k = 0; k < 20; k++) {
+      for (let i = 0; i < N - 1; i++) {
+        const a = R[i], b = R[i + 1], dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, diff = (d - rest) / d;
+        const wa = i === 0 ? 0 : 0.5, wb = i === 0 ? 1 : 0.5;
+        a.x += dx * diff * wa; a.y += dy * diff * wa; b.x -= dx * diff * wb; b.y -= dy * diff * wb;
+      }
+      R[0].x = A[0]; R[0].y = A[1];
+    }
+    return R;
+  }
+  makeDust(cv, dpr, SW, vh, ink, bl, W, H, y, tc, time) {
+    const oc = document.createElement('canvas'); oc.width = cv.width; oc.height = cv.height;
+    const o = oc.getContext('2d');
+    o.drawImage(cv, 0, 0);
+    o.setTransform(dpr, 0, 0, dpr, 0, 0);
+    o.translate(bl + 0.486 * W, 0.2734 * H + y); o.rotate(tc); o.translate(-0.486 * W, -0.2734 * H);
+    o.beginPath();
+    [[43.75, 26.56], [61.1, 26.56], [61.1, 49.61], [51.67, 49.61], [51.67, 47.81], [43.75, 47.81]].forEach(([px, py], i) => { const X = px / 100 * W, Y = py / 100 * H; i ? o.lineTo(X, Y) : o.moveTo(X, Y); });
+    o.closePath(); o.clip();
+    o.drawImage(ink, 0, 0, W, H);
+    const d = o.getImageData(0, 0, oc.width, oc.height).data, st = Math.max(1, Math.round(dpr));
+    const pts = [];
+    let minY = 1e9, maxY = -1e9;
+    for (let j = 0; j < oc.height; j += st) for (let i = 0; i < oc.width; i += st) {
+      const a = d[(j * oc.width + i) * 4 + 3];
+      if (a < 70) continue;
+      const x = i / dpr, yy = j / dpr;
+      pts.push(x, yy, a / 255); if (yy < minY) minY = yy; if (yy > maxY) maxY = yy;
+    }
+    const n = pts.length / 3, P = new Float32Array(n * 9), span = Math.max(1, maxY - minY);
+    for (let k = 0; k < n; k++) {
+      const x = pts[k * 3], yy = pts[k * 3 + 1], a = pts[k * 3 + 2], r = Math.random();
+      const nz = 0.5 + 0.5 * Math.sin(x * 0.05 + Math.sin(yy * 0.031) * 2.5) * Math.cos(yy * 0.043 + Math.sin(x * 0.02) * 2);
+      const o9 = k * 9;
+      P[o9] = x; P[o9 + 1] = yy; P[o9 + 2] = a;
+      P[o9 + 3] = ((yy - minY) / span) * 1.15 + nz * 0.4 + r * 0.12;
+      P[o9 + 4] = 45 + Math.random() * 110; P[o9 + 5] = -25 - Math.random() * 60;
+      P[o9 + 6] = 1.4 + Math.random() * 1.1; P[o9 + 7] = Math.random() * 6.283; P[o9 + 8] = Math.random() < 0.07 ? 1 : 0;
+    }
+    return { P, n, t0: time, sz: 1.15 };
+  }
+  drawDust(ctx, D, time) {
+    const t = time - D.t0, P = D.P;
+    let alive = false;
+    ctx.save();
+    for (let pass = 0; pass < 2; pass++) {
+      ctx.fillStyle = pass ? '#E8833A' : '#1A1917';
+      for (let k = 0; k < D.n; k++) {
+        const o = k * 9;
+        if (pass && !P[o + 8]) continue;
+        const age = t - P[o + 3];
+        if (age < 0) { if (!pass) { ctx.globalAlpha = P[o + 2]; ctx.fillRect(P[o], P[o + 1], D.sz, D.sz); alive = true; } continue; }
+        const life = P[o + 6]; if (age > life) continue;
+        alive = true;
+        const u = age / life, sd = P[o + 7];
+        const x = P[o] + P[o + 4] * age + 70 * age * age + Math.sin(age * 2.4 + sd) * 16 * age + Math.sin(P[o + 1] * 0.04 + age * 3) * 6 * age;
+        const yy = P[o + 1] + P[o + 5] * age - 38 * age * age + Math.cos(age * 2.1 + sd * 1.3) * 12 * age;
+        const a = P[o + 2] * Math.pow(1 - u, 1.4) * (pass ? Math.max(0, 1 - age / 0.45) : 1);
+        if (a <= 0.01) continue;
+        ctx.globalAlpha = a;
+        const z = D.sz * (pass ? 1.1 : (1 - 0.45 * u));
+        ctx.fillRect(x, yy, z, z);
+      }
+    }
+    ctx.restore();
+    D.alive = alive;
+  }
+  renderGirl(tex, time, hairTh, flutter, wTerm) {
+    const k = tex.k, G = tex.girl, go = tex.girlOut, gc = go.getContext('2d');
+    const X0 = 228, Y0 = 1028, HX = 248, HY = 1160, HW = 68, HH = 108;
+    gc.clearRect(0, 0, go.width, go.height);
+    gc.drawImage(G, 0, 0);
+    const cx = Math.round((HX - X0) * k), cy = Math.round((HY - Y0) * k), cw = Math.round((HX + HW - X0) * k) - cx, ch = Math.round((HY + HH - Y0) * k) - cy;
+    gc.clearRect(cx, cy, cw, ch);
+    const solid = Math.round(46 * k), bands = 6, bw = (cw - solid) / bands;
+    for (let j = 0; j < ch; j++) {
+      const u = j / ch, ue = Math.pow(u, 1.7);
+      const dx = (ue * (flutter * Math.sin(time * 1.7 - u * 3.2) + flutter * 0.4 * Math.sin(time * 3.1 - u * 6.8 + 1.3))
+        + Math.sin(hairTh) * u * 80 * 0.6 + wTerm * ue * 4) * k;
+      const sy = cy + j;
+      gc.drawImage(G, cx, sy, solid, 1, cx + Math.round(dx), sy, solid, 1);
+      for (let bi = 0; bi < bands; bi++) {
+        const x0 = Math.round(cx + solid + bi * bw), x1 = Math.round(cx + solid + (bi + 1) * bw), wgt = 1 - (bi + 0.5) / bands;
+        if (x1 > x0) gc.drawImage(G, x0, sy, x1 - x0, 1, x0 + Math.round(dx * wgt), sy, x1 - x0, 1);
+      }
+    }
+    return go;
+  }
+  sim(key, A, B, N, time, gust, s) {
+    let R = this.sims[key];
+    if (!R) R = this.sims[key] = Array.from({ length: N }, (_, i) => { const f = i / (N - 1); const x = A[0] + (B[0] - A[0]) * f, y = A[1] + (B[1] - A[1]) * f; return { x, y, px: x, py: y }; });
+    R[0].x = R[0].px = A[0]; R[0].y = R[0].py = A[1];
+    R[N - 1].x = R[N - 1].px = B[0]; R[N - 1].y = R[N - 1].py = B[1];
+    for (let i = 1; i < N - 1; i++) {
+      const n = R[i], f = i / (N - 1);
+      const vx = (n.x - n.px) * 0.97, vy = (n.y - n.py) * 0.97;
+      const wind = (Math.sin(time * 1.3 + i * 0.22) * 0.05 + Math.sin(time * 2.9 + i * 0.57) * 0.03) * s * gust * Math.sin(f * Math.PI);
+      n.px = n.x; n.py = n.y; n.x += vx + wind; n.y += vy + 0.08 * s;
+    }
+    const rest = Math.hypot(B[0] - A[0], B[1] - A[1]) * 1.012 / (N - 1);
+    for (let k = 0; k < 24; k++) {
+      for (let i = 0; i < N - 1; i++) {
+        const a = R[i], b = R[i + 1], dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, diff = (d - rest) / d;
+        const wa = i === 0 ? 0 : 0.5, wb = i + 1 === N - 1 ? 0 : 0.5, tot = (wa + wb) || 1;
+        a.x += dx * diff * wa / tot; a.y += dy * diff * wa / tot;
+        b.x -= dx * diff * wb / tot; b.y -= dy * diff * wb / tot;
+      }
+      R[0].x = A[0]; R[0].y = A[1]; R[N - 1].x = B[0]; R[N - 1].y = B[1];
+    }
+    return R;
+  }
+  web(ctx, R, frac, rowFn, amp, wf, time, s, dpr, tex, ox, oy) {
+    const N = R.length, A = R[0], B = R[N - 1];
+    const ux = B.x - A.x, uy = B.y - A.y, ul = Math.hypot(ux, uy) || 1, nx = -uy / ul, ny = ux / ul;
+    const P = R.map((n, i) => { const f = i / (N - 1); const w = amp * Math.sin(f * Math.PI) * (Math.sin(f * wf - time * 3.2) + 0.35 * Math.sin(f * wf * 2 - time * 5.1)); return [n.x + nx * w, n.y + ny * w]; });
+    const cum = [0]; for (let i = 1; i < N; i++) cum.push(cum[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+    const Ltot = cum[N - 1], Lsrc = Ltot / s, drawTo = Ltot * frac;
+    let seg = 1;
+    for (let d = 0; d < drawTo; d += 2) {
+      while (seg < N - 1 && cum[seg] < d) seg++;
+      const f = (d - cum[seg - 1]) / ((cum[seg] - cum[seg - 1]) || 1);
+      const x = P[seg - 1][0] + (P[seg][0] - P[seg - 1][0]) * f, y = P[seg - 1][1] + (P[seg][1] - P[seg - 1][1]) * f;
+      const ang = Math.atan2(P[seg][0] - P[seg - 1][0], P[seg][1] - P[seg - 1][1]);
+      const sr = Math.max(612, Math.min(1034, rowFn(d / s, Lsrc)));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.translate(ox + x, oy + y); ctx.rotate(-ang);
+      ctx.drawImage(tex.rope, 0, (sr - 612) * tex.k, tex.rope.width, Math.max(1, 2 * tex.k / s), -29 * s, 0, 60 * s, 2.3);
+    }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  draw(time, p, P) {
+    const e = this.el, iv = this.iv, ph = this.ph;
+    const G0 = this.geom(), H = G0.H, W = G0.W, vh = G0.vh, SW = G0.SW, s = H / 1280;
+    const ink = e.climber;
+    const sr = G0.sr, ar = G0.ar;
+    const Q = [ar.left - sr.left + ar.width * 0.58, ar.top - sr.top + ar.height * 0.52];
+    const bl = Q[0] + 0.05 * H - 350 * s;
+    e.box.style.left = bl + 'px';
+
+    const bob = -0.022 * H * Math.abs(Math.sin(p * Math.PI * 4));
+    const S = this.stg, lb = (S[1].br && S[1].br) || S[0].br, tb = lb ? time - lb.t0 : -1;
+    const jolt = lb ? -0.035 * H * Math.exp(-tb * 3.5) * Math.sin(Math.min(tb, 3) * 11) : 0;
+    const y = (iv.y == null ? -1.3 * vh : iv.y) + bob + jolt;
+    const outC = u => 1 - Math.pow(1 - Math.max(0, Math.min(1, u)), 3);
+    const thDeg = Math.max(-6, Math.min(6, ph.th * 57.3 * (0.5 + 0.5 * (1 - p))));
+    const th = thDeg / 57.3;
+    const jp = this.jp || (this.jp = { mode: 'hang', lk: 1, rk: 0, land: null, last: time });
+    const jdt = Math.min(0.04, Math.max(0, time - jp.last)); jp.last = time;
+    const H0x = bl + 350 * s, H0y = 350 * s + y;
+    const lean = Math.atan2(Q[0] - H0x, H0y - Q[1]) * 0.7 * iv.kUp;
+    const tc0 = lean - th * 0.15;
+    const Ra = [SW - 0.16 * H, 0], L1 = 0.12 * vh, g = 2.4 * vh;
+    const hA = [2 * s, 252 * s], hT = [-1 * s, -8 * s];
+    const Rv = (t, v) => [v[0] * Math.cos(t) - v[1] * Math.sin(t), v[0] * Math.sin(t) + v[1] * Math.cos(t)];
+    const phys = (An, Lmin, inv) => {
+      for (let k = 0; k < 4; k++) {
+        const d4 = jdt / 4;
+        if (jp.arr == null) { jp.rs = Math.min(2.8 * vh, jp.rs + 10 * vh * d4); jp.L = Math.max(Lmin, jp.L - jp.rs * d4); }
+        jp.vy += g * d4;
+        const dmp = Math.exp(-(jp.arr == null ? 0.4 : 1.1) * d4); jp.vx *= dmp; jp.vy *= dmp;
+        jp.px += jp.vx * d4; jp.py += jp.vy * d4;
+        let dx = jp.px - An[0], dy = jp.py - An[1], dd = Math.hypot(dx, dy) || 1;
+        if (dd > jp.L) {
+          const nx = dx / dd, ny = dy / dd; jp.px = An[0] + nx * jp.L; jp.py = An[1] + ny * jp.L;
+          const vr = jp.vx * nx + jp.vy * ny; if (vr > 0) { jp.vx -= nx * vr; jp.vy -= ny * vr; }
+        }
+        if (jp.arr == null && jp.L <= Lmin) {
+          jp.arr = time; dx = jp.px - An[0]; dy = jp.py - An[1]; dd = Math.hypot(dx, dy) || 1;
+          const tx = -dy / dd, ty = dx / dd, vt = jp.vx * tx + jp.vy * ty, cap = Math.sqrt(2 * g * Lmin * (1 - Math.cos(0.55)));
+          const v2 = Math.max(-cap, Math.min(cap, vt)); jp.vx = tx * v2; jp.vy = ty * v2;
+        }
+      }
+      const tg = inv ? Math.atan2(-(An[0] - jp.px), An[1] - jp.py) : Math.atan2(An[0] - jp.px, jp.py - An[1]);
+      let dA = tg - jp.tc; dA -= Math.round(dA / (2 * Math.PI)) * 2 * Math.PI;
+      jp.tc += dA * Math.min(1, jdt * 8);
+    };
+    const startZip = An => { jp.L = Math.hypot(jp.px - An[0], jp.py - An[1]); jp.rs = 0; jp.arr = null; };
+    if (!S[0].br) {
+      if (jp.mode === 'shoot') { jp.mode = 'hang'; jp.rk = 0; this.sims.zip = null; }
+      else if (jp.mode === 'zip') { jp.mode = 'rshoot'; jp.st = time; jp.rk2 = 0; jp.land = null; this.sims.home = null; }
+    }
+    if (jp.mode === 'hang' && S[0].br && time - S[0].br.t0 > 0.35) { jp.mode = 'shoot'; jp.st = time; jp.rk = 0; }
+    let Hx = H0x, Hy = H0y, tc = tc0;
+    if (jp.mode === 'shoot') {
+      jp.rk = outC((time - jp.st) / 0.3);
+      if (jp.rk >= 1) { const o = Rv(tc0, hA); jp.mode = 'zip'; jp.px = H0x + o[0]; jp.py = H0y + o[1]; jp.vx = 0; jp.vy = 0; jp.tc = tc0; startZip(Ra); }
+    }
+    if (jp.mode === 'zip' || jp.mode === 'rshoot') {
+      phys(Ra, L1, true);
+      if (jp.mode === 'zip' && jp.arr != null && jp.land == null && time - jp.arr > 1.0) jp.land = time;
+      const o = Rv(jp.tc, hA);
+      Hx = jp.px - o[0]; Hy = jp.py - o[1] + (jp.land != null ? bob + jolt : 0); tc = jp.tc - (jp.land != null ? th * 0.15 : 0);
+      if (jp.mode === 'rshoot') {
+        jp.rk2 = outC((time - jp.st) / 0.3);
+        if (jp.rk2 >= 1) {
+          const o2 = Rv(jp.tc, hT), oh = Rv(tc0, hT);
+          jp.px = Hx + o2[0]; jp.py = Hy + o2[1]; jp.mode = 'rzip';
+          jp.Lh = Math.hypot(H0x + oh[0] - Q[0], H0y + oh[1] - Q[1]); startZip(Q); this.sims.zip = null;
+        }
+      }
+    } else if (jp.mode === 'rzip') {
+      phys(Q, jp.Lh, false);
+      const bl2 = jp.arr != null ? Math.min(1, (time - jp.arr - 0.6) / 0.5) : 0, eb = bl2 <= 0 ? 0 : bl2 * bl2 * (3 - 2 * bl2);
+      const o = Rv(jp.tc, hT), qx = jp.px - o[0], qy = jp.py - o[1];
+      let dT = tc0 - jp.tc; dT -= Math.round(dT / (2 * Math.PI)) * 2 * Math.PI;
+      Hx = qx + (H0x - qx) * eb; Hy = qy + (H0y - qy) * eb; tc = jp.tc + dT * eb;
+      if (bl2 >= 1) { jp.mode = 'hang'; jp.lk = 1; jp.rk = 0; this.sims.home = null; }
+    }
+    jp.lk = jp.mode === 'hang' ? Math.min(1, jp.lk + jdt / 0.18) : jp.mode === 'shoot' ? jp.lk : 0;
+    if (jp.lk === 0) this.sims.top = null;
+    if (jp.mode === 'hang') this.sims.zip = null;
+    const cc = Math.cos(tc), sc = Math.sin(tc);
+    const rot = (dx, dy) => [Hx + dx * cc - dy * sc, Hy + dx * sc + dy * cc];
+    e.climber.style.transform = 'translate(' + (Hx - H0x).toFixed(2) + 'px,' + (Hy - 350 * s).toFixed(2) + 'px) rotate(' + (tc * 57.3) + 'deg)';
+
+    const cv = e.cv, dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (cv.width !== Math.round(SW * dpr) || cv.height !== Math.round(vh * dpr)) { cv.width = Math.round(SW * dpr); cv.height = Math.round(vh * dpr); }
+    const ctx = cv.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, SW, vh);
+    if (!ink.complete || !ink.naturalWidth) return;
+    const tex = this.tex(ink, s * dpr * 2.2);
+    const gust = 1 + Math.min(4, ph.speed * 6);
+    const pingpong = d => { const m = d % 756; return m < 378 ? 612 + m : 990 - (m - 378); };
+
+    e.climber.style.opacity = 1;
+    if (iv.kUp > 0 && jp.lk > 0) {
+      const T0 = rot(-1 * s, -8 * s);
+      const fs = ar.width * 0.62 / 60;
+      let dx = T0[0] - Q[0], dy = T0[1] - Q[1]; const dl = Math.hypot(dx, dy) || 1; dx /= dl; dy /= dl;
+      const apex = [Q[0] + dx * 47 * fs, Q[1] + dy * 47 * fs];
+      const R = this.sim('top', T0, apex, 30, time, gust * 0.6, s);
+      this.web(ctx, R, iv.kUp * jp.lk, d => pingpong(d + 60), (2 + Math.min(5, ph.speed * 25)) * s, 5, time, s, dpr, tex, 0, 0);
+      if (iv.kUp >= 1 && jp.lk >= 1) {
+        ctx.save();
+        ctx.translate(Q[0], Q[1]); ctx.rotate(Math.atan2(-dx, dy)); ctx.scale(fs, -fs); ctx.translate(-357, -1080);
+        ctx.beginPath(); ctx.rect(328, 1033, 72, 47); ctx.clip();
+        ctx.drawImage(ink, 0, 0);
+        ctx.restore();
+      }
+    } else this.sims.top = null;
+    if (jp.mode === 'rshoot' || jp.mode === 'rzip') {
+      const T0 = rot(-1 * s, -8 * s);
+      const R = this.sim('home', T0, Q, 28, time, gust * (jp.mode === 'rzip' ? 0.15 : 0.6), s);
+      this.web(ctx, R, jp.mode === 'rzip' ? 1 : jp.rk2, d => pingpong(d + 60), (jp.mode === 'rzip' ? 1 : 2.5) * s, 5, time, s, dpr, tex, 0, 0);
+      if (jp.mode === 'rzip' || jp.rk2 >= 1) this.splat(ctx, Q[0], Q[1], s * 1.2, 0.9, 0);
+    }
+    if (jp.mode === 'shoot' || jp.mode === 'zip' || jp.mode === 'rshoot') {
+      const T0 = rot(2 * s, 252 * s);
+      const R = this.sim('zip', T0, Ra, 28, time, gust * (jp.mode === 'zip' ? 0.15 : 0.6), s);
+      this.web(ctx, R, jp.mode === 'zip' ? 1 : jp.rk, d => pingpong(d + 60), (jp.mode === 'zip' ? 1 : 2.5) * s, 5, time, s, dpr, tex, 0, 0);
+      if (jp.mode === 'zip' || jp.rk >= 1) this.splat(ctx, Ra[0], Ra[1], s * 1.4, 0.9, 0);
+    }
+
+    const A0 = rot(2 * s, 252 * s), cl = v => Math.max(0, Math.min(1, v));
+    const rowLow = (d, L) => { const e2 = L - d; return e2 <= 423 ? 1035 - e2 : pingpong(e2 - 423); };
+    const panels = [e.gfx, e.aboutP], covers = [];
+    S.forEach((st, i) => {
+      const el = panels[i], brk = st.br, A = i === 0 ? A0 : rot(-1 * s, -8 * s);
+      const gp = st.gp || (st.gp = { y: vh + 60, v: 0, tilt: 0, ax: A[0], last: time });
+      const dt = Math.min(0.033, Math.max(0, time - gp.last)); gp.last = time;
+      if (!brk) gp.ax = A[0];
+      const live = i === 0 || !!S[0].br;
+      const kd = i === 0 ? iv.kDown : (S[0].br && jp.land != null ? outC((time - jp.land - 0.3) / 0.6) : 0);
+      st.kd = kd; st.pi = cl((P - st.a) / (st.b - st.a));
+      const sm = st.pi * st.pi * (3 - 2 * st.pi), restY = vh + 40, active = !brk && live && kd >= 1;
+      const target = brk ? 0 : active ? restY + (A[1] + 0.1 * vh - restY) * sm : restY;
+      const kk = brk ? 120 : 260, zeta = brk ? 0.38 : 0.85;
+      gp.v += ((target - gp.y) * kk - 2 * zeta * Math.sqrt(kk) * gp.v) * dt; gp.y += gp.v * dt;
+      gp.tilt += ((active ? th * 0.22 + Math.max(-0.01, Math.min(0.01, gp.v * 0.00002)) : 0) - gp.tilt) * Math.min(1, dt * 7);
+      covers[i] = cl(1 - gp.y / vh);
+      el._t = 'translate3d(0,' + gp.y.toFixed(2) + 'px,0) rotate(' + gp.tilt.toFixed(5) + 'rad)';
+      el.style.transformOrigin = gp.ax + 'px 0px';
+      el.style.visibility = gp.y >= vh + 1 ? 'hidden' : 'visible';
+      el.style.pointerEvents = brk && gp.y < 6 ? 'auto' : 'none';
+      const B = [gp.ax, gp.y], key = 'low' + i;
+      if (!brk) {
+        if (live && kd > 0) {
+          const R = this.sim(key, A, B, 40, time, gust, s);
+          this.web(ctx, R, kd, rowLow, (3 + Math.min(9, ph.speed * 45)) * s, 7.5, time, s, dpr, tex, 0, 0);
+          if (kd >= 1) this.splat(ctx, B[0], B[1], s * 1.5, 0.9, gp.tilt);
+        } else this.sims[key] = null;
+        return;
+      }
+      const tb2 = time - brk.t0;
+      if (!brk.from) {
+        const R0 = this.sims[key]; brk.from = 1; brk.rest = Math.hypot(B[0] - A[0], B[1] - A[1]) * 1.012 / 39;
+        if (R0) R0.forEach((n, j) => { n.py = n.y + (j / 39) * 30 * s; n.px = n.x + (Math.random() - 0.5) * 5 * s; });
+      }
+      if (tb2 < 1.4) this.splat(ctx, B[0], B[1], s * 1.5, 0.9 * (1 - tb2 / 1.4), gp.tilt);
+      const fa = 1 - cl((tb2 - 0.3) / 0.45);
+      if (fa > 0 && this.sims[key]) {
+        const Rl = this.simFree(key, A, 40, brk.rest, 0, 0.32 * s, time, s, [0, 1]);
+        ctx.globalAlpha = fa; this.web(ctx, Rl, 1, d => pingpong(d + 30), 1.5 * s, 6, time, s, dpr, tex, 0, 0); ctx.globalAlpha = 1;
+      }
+    });
+    e.hero.style.transform = 'scale(' + (1 - 0.045 * covers[0]).toFixed(4) + ')';
+    this.cov0 = covers[0]; this.cov1 = covers[1];
+    if (!e.shH) { e.shH = e.hero.querySelector('[data-shade]'); e.shG = e.gfx.querySelector('[data-shade]'); }
+    e.shH.style.opacity = (0.3 * covers[0]).toFixed(3);
+    e.gfx.style.transform = e.gfx._t + (covers[1] > 0.001 ? ' scale(' + (1 - 0.045 * covers[1]).toFixed(4) + ')' : '');
+    e.shG.style.opacity = (0.3 * covers[1]).toFixed(3);
+    e.aboutP.style.transform = e.aboutP._t;
+    e.hint.style.opacity = (iv.done && !S[0].br && S[0].pi < 0.04) || (S[0].br && !S[1].br && S[1].kd >= 1 && S[1].pi < 0.04) ? 1 : 0;
+  }
+  splat(ctx, x, y, k, a, rot) {
+    if (a <= 0.01) return;
+    ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.strokeStyle = '#1A1917'; ctx.lineCap = 'round';
+    const L = [[-1.35, 15], [-0.85, 26], [-0.4, 33], [0.05, 29], [0.5, 35], [0.95, 24], [1.4, 17]];
+    L.forEach(([g, len], i) => {
+      ctx.globalAlpha = a * (i % 2 ? 0.75 : 0.95); ctx.lineWidth = (i % 2 ? 0.9 : 1.5) * k;
+      const ex = Math.sin(g) * len * k, ey = Math.cos(g) * len * k;
+      ctx.beginPath(); ctx.moveTo(0, 0); ctx.quadraticCurveTo(ex * 0.5 + (i % 2 ? 2.5 : -2.5) * k, ey * 0.42, ex, ey); ctx.stroke();
+    });
+    ctx.lineWidth = 0.7 * k; ctx.globalAlpha = a * 0.6;
+    [9, 17].forEach(rr => { ctx.beginPath(); L.slice(1, 6).forEach(([g], i) => { const px = Math.sin(g) * rr * k, py = Math.cos(g) * rr * k; i ? ctx.quadraticCurveTo(px * 0.5, py * 0.75, px, py) : ctx.moveTo(px, py); }); ctx.stroke(); });
+    ctx.globalAlpha = a; ctx.fillStyle = '#1A1917'; ctx.beginPath(); ctx.arc(0, 0, 2.2 * k, 0, 6.283); ctx.fill();
+    ctx.restore();
+  }
+  tex(ink, k) {
+    k = Math.round(k * 100) / 100;
+    if (this._tex && this._tex.k === k) return this._tex;
+    const mk = (w, h) => { const c = document.createElement('canvas'); c.width = Math.max(1, Math.round(w)); c.height = Math.max(1, Math.round(h)); return c; };
+    const rope = mk(60 * k, 423 * k); rope.getContext('2d').drawImage(ink, 325, 612, 60, 423, 0, 0, rope.width, rope.height);
+    const girl = mk(265 * k, 240 * k); const gx = girl.getContext('2d');
+    gx.drawImage(ink, 228, 1028, 265, 240, 0, 0, girl.width, girl.height);
+    const girlOut = mk(265 * k, 240 * k);
+    return (this._tex = { k, rope, girl, girlOut });
+  }
+  initFx() {
+    const cv = document.querySelector('[data-fx]'), photo = document.querySelector('[data-photo]'), stage = this.el.stage;
+    const gl = cv.getContext('webgl', { premultipliedAlpha: false, antialias: false, alpha: true, preserveDrawingBuffer: true });
+    if (!gl) {
+      photo.style.transition = 'opacity .8s ease, filter .8s ease';
+      photo.style.opacity = 1;
+      this.fx = { setHero: on => { photo.style.opacity = on ? 1 : 0; photo.style.filter = on ? 'none' : 'blur(8px)'; }, setAbout: on => this.el.ab.forEach(n => { n.style.transition = 'opacity .6s ease'; n.style.opacity = on ? 1 : 0; }) };
+      return;
+    }
+    const vs = `
+      attribute vec2 aT; attribute vec3 aS; attribute vec4 aC; attribute vec3 aR;
+      uniform float uT; uniform vec2 uRes; uniform float uPt; uniform float uDpr; uniform vec2 uCen;
+      varying vec4 vC; varying float vK;
+      void main(){
+        float e = clamp((uT - aR.x) / aR.z, 0.0, 1.0);
+        float k = e*e*e*(e*(e*6.0-15.0)+10.0);
+        float sw = 1.0 - k;
+        vec3 s = aS + vec3(sin(uT*0.6 + aR.y*40.0)*18.0 - uT*14.0, cos(uT*0.5 + aR.y*63.0)*14.0 + uT*5.0, 0.0);
+        vec3 p = mix(s, vec3(aT, 0.0), k);
+        float ph = aR.y*6.2831;
+        vec2 q = p.xy * 0.006;
+        vec2 curl = vec2(sin(q.y*2.3 + uT*0.9 + ph) + 0.5*sin(q.y*5.1 - uT*1.3), cos(q.x*2.1 - uT*0.7 + ph) + 0.5*cos(q.x*4.7 + uT*1.1));
+        p.xy += curl * sw * (1.0 - sw) * 4.0 * 70.0 + curl * sw * sw * 35.0;
+        float persp = 1.0 / (1.0 - p.z * 0.55);
+        vec2 xy = uCen + (p.xy - uCen) * persp;
+        vec2 c = xy / uRes * 2.0 - 1.0;
+        gl_Position = vec4(c.x, -c.y, 0.0, 1.0);
+        float blur = sw * (abs(p.z) * 3.2 + 0.6);
+        gl_PointSize = uPt * uDpr * (1.0 + blur) * persp;
+        float pre = clamp(uT / 0.9, 0.0, 1.0);
+        float flick = 0.75 + 0.25 * sin(uT * 9.0 + aR.y * 90.0);
+        float glint = smoothstep(0.55, 0.85, e) * (1.0 - smoothstep(0.9, 1.0, e));
+        vec3 col = mix(aC.rgb * 0.85, aC.rgb, k);
+        col = mix(col, vec3(1.0, 0.62, 0.28), glint * 0.6);
+        float act = step(0.0001, uT - aR.x + 0.6);
+        float a0 = 0.5 * flick / (1.0 + blur * blur * 0.6);
+        vC = vec4(col, aC.a * pre * mix(a0 * (0.35 + 0.65 * act), 1.0, k));
+        vK = k;
+      }`;
+    const fs = `precision mediump float; varying vec4 vC; varying float vK; uniform float uFade;
+      void main(){ float d = length(gl_PointCoord - 0.5); float a = mix(smoothstep(0.5, 0.0, d), 1.0, vK * vK); gl_FragColor = vec4(vC.rgb, vC.a * a * uFade); }`;
+    const sh = (t, src) => { const s = gl.createShader(t); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.warn(gl.getShaderInfoLog(s)); return s; };
+    const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); gl.useProgram(pr);
+    const U = n => gl.getUniformLocation(pr, n);
+    const F = 4, ST = 12 * F;
+    const locs = [['aT', 2, 0], ['aS', 3, 2], ['aC', 4, 5], ['aR', 3, 9]].map(([n, sz, off]) => [gl.getAttribLocation(pr, n), sz, off]);
+    locs.forEach(([l]) => gl.enableVertexAttribArray(l));
+    gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    const W0 = () => stage.getBoundingClientRect();
+    const mkSys = (px, cols, rows, ox, oy, step, o) => {
+      const sr = W0(), W = sr.width, H = sr.height, dw = cols * step, dh = rows * step, cx = ox + dw / 2, cy = oy + dh * 0.45;
+      const arr = [];
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        const q = (j * cols + i) * 4, al = px[q + 3];
+        if (al < 30) continue;
+        const tx = ox + (i + 0.5) * step, ty = oy + (j + 0.5) * step;
+        const nf = 0.5 + 0.5 * Math.sin(tx * 0.019 + Math.sin(ty * 0.023) * 2.2) * Math.cos(ty * 0.015 + Math.sin(tx * 0.012) * 2.4);
+        const front = (o.wx > 0 ? i / cols : 1 - i / cols) * 0.55 + (j / rows) * 0.45;
+        const delay = o.d0 + front * o.fr + nf * o.nz + Math.random() * 0.18;
+        const dist = 120 + Math.pow(Math.random(), 1.4) * Math.max(W, H) * o.spread * (0.6 + front);
+        const gau = (Math.random() + Math.random() + Math.random() - 1.5) * 0.9;
+        const sx = tx + o.wx * dist - o.wy * dist * 0.35 * gau, sy = ty + o.wy * dist + o.wx * dist * 0.35 * gau + (Math.random() - 0.5) * 60;
+        const sz = (Math.random() * 2 - 1) * Math.min(0.9, dist / 700);
+        const dur = o.dur0 + Math.random() * o.durR;
+        arr.push(tx, ty, sx, sy, sz, px[q] / 255, px[q + 1] / 255, px[q + 2] / 255, al / 255, delay, Math.random(), dur);
+      }
+      const data = new Float32Array(arr), buf = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
+      return { buf, count: data.length / 12, step, cx, cy, end: o.d0 + o.fr + o.nz + 0.18 + o.dur0 + o.durR + 0.15, t: 0, dir: 0, speed: 1 };
+    };
+    const abEls = this.el.ab;
+    const fx = this.fx = { sys: {}, raf: 0 };
+    const src = new Image(); if (photo) src.src = photo.getAttribute('src');
+    src.onload = () => {
+      const sr = W0(), pr2 = photo.getBoundingClientRect();
+      const sc = Math.min(pr2.width / src.naturalWidth, pr2.height / src.naturalHeight);
+      const dw = src.naturalWidth * sc, dh = src.naturalHeight * sc;
+      const ox = pr2.left - sr.left + (pr2.width - dw) / 2, oy = pr2.top - sr.top + (pr2.height - dh);
+      const step = Math.max(1.4, Math.sqrt(dw * dh * 0.62 / 90000));
+      const cols = Math.floor(dw / step), rows = Math.floor(dh / step);
+      const oc = document.createElement('canvas'); oc.width = cols; oc.height = rows;
+      const c2 = oc.getContext('2d'); c2.drawImage(src, 0, 0, cols, rows);
+      const sys = mkSys(c2.getImageData(0, 0, cols, rows).data, cols, rows, ox, oy, step, { wx: 0.94, wy: -0.34, d0: 0.7, fr: 1.6, nz: 0.7, dur0: 1.3, durR: 0.7, spread: 0.7 });
+      sys.kind = 'hero'; fx.sys.hero = sys; sys.dir = 1; fx.setHero(fx.heroOn);
+    };
+    const buildAbout = () => {
+      const sr = W0(), K = 0.8;
+      let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+      const words = [];
+      abEls.forEach(el => {
+        const tw = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let n;
+        while ((n = tw.nextNode())) {
+          const cs = getComputedStyle(n.parentElement), re = /\S+/g; let m;
+          while ((m = re.exec(n.data))) {
+            const r = document.createRange(); r.setStart(n, m.index); r.setEnd(n, m.index + m[0].length);
+            const rc = r.getBoundingClientRect(); if (!rc.width) continue;
+            const L = rc.left - sr.left, T = rc.top - sr.top;
+            words.push({ w: cs.textTransform === 'uppercase' ? m[0].toUpperCase() : m[0], L, T, Hh: rc.height, cs });
+            x0 = Math.min(x0, L); y0 = Math.min(y0, T); x1 = Math.max(x1, L + rc.width); y1 = Math.max(y1, T + rc.height);
+          }
+        }
+      });
+      if (!words.length) return null;
+      x0 -= 6; y0 -= 6; x1 += 6; y1 += 6;
+      const cols = Math.ceil((x1 - x0) * K), rows = Math.ceil((y1 - y0) * K);
+      const c = document.createElement('canvas'); c.width = cols; c.height = rows;
+      const g = c.getContext('2d'); g.scale(K, K);
+      words.forEach(({ w, L, T, Hh, cs }) => {
+        g.font = cs.fontStyle + ' ' + cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+        try { g.letterSpacing = cs.letterSpacing === 'normal' ? '0px' : cs.letterSpacing; } catch (_) {}
+        g.fillStyle = cs.color; g.textBaseline = 'alphabetic';
+        const mm = g.measureText(w), asc = mm.fontBoundingBoxAscent || parseFloat(cs.fontSize) * 0.8, des = mm.fontBoundingBoxDescent || parseFloat(cs.fontSize) * 0.2;
+        g.fillText(w, L - x0, T - y0 + asc + (Hh - asc - des) / 2);
+      });
+      const s = mkSys(g.getImageData(0, 0, cols, rows).data, cols, rows, x0, y0, 1 / K, { wx: -0.94, wy: -0.3, d0: 0.15, fr: 0.9, nz: 0.4, dur0: 1.0, durR: 0.5, spread: 0.45 });
+      s.kind = 'about'; return s;
+    };
+    fx.heroOn = true;
+    fx.setHero = on => { fx.heroOn = on; const s = fx.sys.hero; if (!s) return; if (!on && s.t <= 0) { s.dir = 0; return; } s.dir = on ? 1 : -1; s.speed = on ? 1.6 : 1.7; };
+    fx.setAbout = on => {
+      if (on && !fx.sys.about) fx.sys.about = buildAbout();
+      const s = fx.sys.about; if (!s) { abEls.forEach(n => { n.style.opacity = on ? 1 : 0; }); return; }
+      s.dir = on ? 1 : -1; s.speed = on ? 1.15 : 2.2;
+    };
+    let last = 0, cleared = false;
+    const frame = now => {
+      fx.raf = requestAnimationFrame(frame);
+      const dt = last ? Math.min(0.05, (now - last) / 1000) : 0; last = now;
+      const sr = W0(), dpr = Math.min(2, window.devicePixelRatio || 1);
+      const list = Object.values(fx.sys).filter(Boolean);
+      let any = false;
+      list.forEach(s => {
+        if (s.dir) { s.t += s.dir * dt * s.speed; if (s.t >= s.end + 0.9) { s.t = s.end + 0.9; s.dir = 0; } if (s.t <= 0) { s.t = 0; s.dir = 0; } }
+        const op = Math.max(0, Math.min(1, (s.t - s.end + 0.5) / 0.9));
+        if (s.kind === 'hero') photo.style.opacity = op; else abEls.forEach(n => { n.style.opacity = op; });
+        s.fade = 1 - Math.max(0, Math.min(1, (s.t - s.end) / 0.9));
+        s.vis = s.t > 0 && s.fade > 0; if (s.vis) any = true;
+      });
+      if (!any) { if (!cleared) { gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT); cleared = true; } return; }
+      cleared = false;
+      if (cv.width !== Math.round(sr.width * dpr) || cv.height !== Math.round(sr.height * dpr)) { cv.width = Math.round(sr.width * dpr); cv.height = Math.round(sr.height * dpr); }
+      gl.viewport(0, 0, cv.width, cv.height); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
+      list.forEach(s => {
+        if (!s.vis) return;
+        gl.bindBuffer(gl.ARRAY_BUFFER, s.buf);
+        locs.forEach(([l, sz, off]) => gl.vertexAttribPointer(l, sz, gl.FLOAT, false, ST, off * F));
+        gl.uniform1f(U('uT'), s.t); gl.uniform2f(U('uRes'), sr.width, sr.height); gl.uniform1f(U('uPt'), s.step * 1.08);
+        gl.uniform1f(U('uDpr'), dpr); gl.uniform2f(U('uCen'), s.cx, s.cy); gl.uniform1f(U('uFade'), s.fade);
+        gl.drawArrays(gl.POINTS, 0, s.count);
+      });
+    };
+    fx.raf = requestAnimationFrame(frame);
+  }
+  initSkills() {
+    const q = s => document.querySelector(s);
+    const box = q('[data-skill]'), arrow = q('[data-sarrow]'), dock = q('[data-dock]'), stage = this.el.stage;
+    const F = { icon: q('[data-sicon]'), name: q('[data-sname]'), level: q('[data-slevel]'), done: q('[data-sdone]'), know: q('[data-sknow]') };
+    // Edit per tool: level, what she has done with it, and what she knows inside it.
+    const SK = {
+      'After Effects': ['Advanced', 'Leads motion graphics in-house at a Dubai wealth management firm — animated titles, data callouts and branded templates for every reel and ad.', ['Keyframes & graph editor', 'Shape layers', 'Text animators', 'Expressions', 'Masking & roto', 'Motion tracking', 'Essential Graphics', '3D camera']],
+      'Premiere Pro': ['Advanced', 'Runs post-production for 40+ videos a month — raw footage to finished Instagram Reels, TikToks, YouTube videos and paid social ads.', ['Story & pacing', 'Multicam', 'Lumetri colour', 'Audio clean-up', 'Captions', 'Proxies', 'Platform exports', 'Dynamic Link']],
+      'Audition': ['Working', 'Cleans dialogue and balances music under voice for reels and ads.', ['Noise reduction', 'Spectral repair', 'EQ & compression', 'Loudness matching', 'Multitrack mixing']],
+      'Photoshop': ['Daily', 'Thumbnails, posters and social graphics, plus retouching for campaign stills.', ['Retouching', 'Compositing', 'Masking', 'Colour grading', 'Thumbnails', 'Mockups']],
+      'Illustrator': ['Working', 'Vector assets, icons and layouts built for animation and print.', ['Vector illustration', 'Typography', 'Logo assets', 'Layout', 'AE-ready exports']],
+      'Lightroom': ['Working', 'Grades photo sets for campaigns and social.', ['Colour grading', 'Presets', 'Batch editing', 'Skin tones']],
+      'Firefly': ['Working', 'Generative fills and quick concept visuals.', ['Generative fill', 'Text to image', 'Style reference']],
+      'DaVinci Resolve': ['Working', 'Colour grading and finishing for hero pieces.', ['Node grading', 'Primaries & secondaries', 'Skin tone correction', 'LUTs']],
+      'Final Cut Pro': ['Working', 'Fast-turnaround edits on the go.', ['Magnetic timeline', 'Multicam', 'Titles']],
+      'CapCut': ['Daily', 'Trend-led TikTok and Reels edits — 270K+ views across 12 freelance videos, two passing 155K and 100K.', ['Auto captions', 'Trend formats', 'Beat sync', 'Speed ramps', 'Keyframe effects']],
+      'Descript': ['Working', 'Talking-head and podcast cuts edited by transcript.', ['Text-based editing', 'Filler word removal', 'Studio Sound']],
+      'Figma': ['Working', 'Storyboards, layouts and design handoff for motion work.', ['Auto layout', 'Storyboarding', 'Components', 'Prototyping']],
+      'Canva': ['Daily', 'Quick-turn social posts and brand kits.', ['Brand kits', 'Templates', 'Multi-format resizing']],
+      'Runway': ['Working', 'AI-assisted shots and clean-up.', ['Text & image to video', 'Background removal', 'Motion brush', 'Inpainting']],
+      'Midjourney': ['Working', 'Moodboards and concept frames before a shoot or edit.', ['Prompting', 'Style references', 'Upscaling', 'Aspect control']],
+      'Kling AI': ['Working', 'Image-to-video shots for ads and concepts.', ['Image to video', 'Camera motion', 'Prompting']],
+      'Veo': ['Working', 'Generated b-roll and concept shots.', ['Text to video', 'Prompt direction']],
+      'ElevenLabs': ['Working', 'Voiceovers for ads and explainers.', ['Text to speech', 'Voice design', 'Dubbing']]
+    };
+    const E = 'cubic-bezier(.2,.8,.2,1)';
+    let cur = null;
+    const rows = [...box.querySelectorAll('[data-sr]')];
+    const fill = el => {
+      const name = el.dataset.name, d = SK[name] || ['', '', []];
+      F.icon.src = el.querySelector('img').src; F.name.textContent = name; F.level.textContent = d[0].toUpperCase(); F.done.textContent = d[1];
+      F.know.innerHTML = '';
+      d[2].forEach(t => { const c = document.createElement('span'); c.style.cssText = 'padding:5px 10px;border-radius:999px;background:rgba(29,29,27,.07);font-size:12px;line-height:1.2'; c.textContent = t; F.know.appendChild(c); });
+    };
+    const stagger = () => {
+      rows.forEach(n => { n.style.transition = 'none'; n.style.opacity = 0; n.style.transform = 'translateY(8px)'; });
+      box.offsetWidth;
+      rows.forEach((n, k) => { const dl = (0.06 + k * 0.06) + 's'; n.style.transition = 'opacity .45s ease ' + dl + ', transform .6s ' + E + ' ' + dl; n.style.opacity = 1; n.style.transform = 'none'; });
+    };
+    const place = el => {
+      const sr = stage.getBoundingClientRect(), dr = dock.getBoundingClientRect(), ir = el.getBoundingClientRect();
+      const w = box.offsetWidth, cx = ir.left + ir.width / 2 - sr.left;
+      const left = Math.max(12, Math.min(sr.width - w - 12, cx - w / 2));
+      box.style.left = left + 'px'; box.style.bottom = (sr.bottom - dr.top + 14) + 'px';
+      arrow.style.left = Math.max(18, Math.min(w - 18, cx - left)) + 'px';
+    };
+    const mark = () => {};
+    dock.querySelectorAll('[data-dk]').forEach(n => { n.style.outline = 'none'; n.style.webkitTapHighlightColor = 'transparent'; });
+    const open = el => {
+      const was = !!cur; cur = el; fill(el); mark(el);
+      if (!was) { const tr = box._tr || (box._tr = box.style.transition); box.style.transition = 'none'; place(el); box.offsetWidth; box.style.transition = tr; } else place(el);
+      box.style.visibility = 'visible'; box.style.pointerEvents = 'auto'; box.style.transitionDelay = '0s';
+      box.style.opacity = 1; box.style.transform = 'none';
+      stagger();
+    };
+    const close = () => {
+      if (!cur) return; cur = null; mark(null);
+      box.style.opacity = 0; box.style.transform = 'translateY(12px) scale(.96)'; box.style.pointerEvents = 'none';
+      clearTimeout(this.skT); this.skT = setTimeout(() => { if (!cur) box.style.visibility = 'hidden'; }, 320);
+    };
+    dock.querySelectorAll('[data-dk]').forEach(el => {
+      el.style.cursor = 'pointer'; el.setAttribute('role', 'button'); el.setAttribute('tabindex', '0'); el.setAttribute('aria-label', el.dataset.name);
+      el.addEventListener('click', e => { e.stopPropagation(); cur === el ? close() : open(el); });
+      el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); cur === el ? close() : open(el); } });
+    });
+    q('[data-sclose]').addEventListener('click', e => { e.stopPropagation(); close(); });
+    this.onSkDown = e => { if (cur && !box.contains(e.target) && !dock.contains(e.target)) close(); };
+    document.addEventListener('pointerdown', this.onSkDown, true);
+    this.onSkKey = e => { if (e.key === 'Escape') close(); };
+    window.addEventListener('keydown', this.onSkKey);
+    dock.addEventListener('scroll', close, { passive: true });
+    window.addEventListener('resize', () => { if (cur) place(cur); });
+    window.addEventListener('scroll', () => { if (cur && Math.abs((this.scrollY || 0) - (this.skY ?? this.scrollY)) > 40) close(); }, { passive: true });
+    box.addEventListener('transitionend', () => { if (cur) this.skY = this.scrollY; });
+  }
+  initViewer() {
+    const q = s => document.querySelector(s);
+    const V = { root: q('[data-viewer]'), bd: q('[data-vbd]'), media: q('[data-vmedia]'), panel: q('[data-vpanel]'), body: q('[data-vbody]'),
+      cat: q('[data-vcat]'), idx: q('[data-vidx]'), title: q('[data-vtitle]'), sub: q('[data-vsub]'), fmt: q('[data-vformat]'), role: q('[data-vrole]'),
+      idea: q('[data-videa]'), did: q('[data-vdid]'), tools: q('[data-vtools]'), prevT: q('[data-vprevt]'), nextT: q('[data-vnextt]') };
+    const E = 'cubic-bezier(.2,.8,.2,1)', MT = 'left .8s ' + E + ', top .8s ' + E + ', width .8s ' + E + ', height .8s ' + E + ', border-radius .8s ' + E + ', opacity .3s ease';
+    const TOOLS = { 'Premiere Pro': 'pr', 'After Effects': 'ae', 'Audition': 'au', 'Photoshop': 'ps', 'Illustrator': 'ai', 'Lightroom': 'lr', 'Firefly': 'ff', 'DaVinci Resolve': 'dr', 'Final Cut Pro': 'fc', 'CapCut': 'cc', 'Figma': 'fg', 'Canva': 'ca', 'Runway': 'rw', 'Midjourney': 'mj', 'ElevenLabs': 'el' };
+    // Per-project copy — key by the icon title. Anything missing falls back to the defaults below.
+    const INFO = {"V1":{"name":"Founder, on camera","client":"Rochak","cat":"Personal brand","role":"Edit · motion · captions","idea":"A talking-head series built to feel like a conversation, not a lecture. The goal: hold attention past the first three seconds and let his personality carry the message.","did":["Cut for rhythm: tightened every pause so each line lands on the beat","Kinetic captions synced word-for-word for sound-off viewing","Punch-ins, B-roll and graphic callouts to reset attention every few seconds"],"tools":["Premiere Pro","After Effects","Audition"]},
+      "V2":{"name":"Same voice, new hook","client":"Rochak","cat":"Personal brand","role":"Edit · motion · captions","idea":"The second episode of the series, keeping one consistent visual identity so his audience recognises the content before they read a word.","did":["Reusable caption and title system for a consistent series look","Hook-first structure: strongest line moved to the opening second","Clean audio pass and music bed balanced under dialogue"],"tools":["Premiere Pro","After Effects","Audition"]},
+      "V7":{"name":"Money, made simple","client":"Wall Street Junior","cat":"Financial education","role":"Edit · motion graphics","idea":"Financial concepts can lose people fast. The brief was to make them snackable for a young audience: fast, visual and easy to follow, without dumbing them down.","did":["Turned dense talking points into a tight, scroll-stopping cut","Animated charts, numbers and on-screen callouts to visualise each idea","Branded caption style and pacing built for Reels and TikTok"],"tools":["Premiere Pro","After Effects","Photoshop"]},
+      "V8":{"name":"The festive drop","client":"Wall Street Junior","cat":"Seasonal campaign","role":"Edit · motion graphics","idea":"A festive-season piece that ties the brand to the moment people talk about wealth and new beginnings. Warm and celebratory, but still on-message.","did":["Seasonal colour grade and festive motion elements layered on the edit","Message structured into a clear hook, value and call-to-action","Delivered in vertical cuts for Instagram and TikTok"],"tools":["Premiere Pro","After Effects","Photoshop"]},
+      "V10":{"name":"Walk-through, reimagined","client":"Real estate","cat":"Property marketing","role":"Edit · colour · motion","idea":"Selling a space means selling a feeling. The cut moves through the property the way a buyer would, letting light, scale and finish do the talking.","did":["Smooth transitions and speed ramps to guide the eye room to room","Bright, true-to-life grade to show off materials and natural light","Minimal typography for location, size and key features"],"tools":["Premiere Pro","After Effects","DaVinci Resolve"]},
+      "V11":{"name":"Quiet luxury","client":"Maybach","cat":"Automotive edit","role":"Edit · colour · sound design","idea":"For a car defined by restraint, the edit is slow and deliberate: long holds, soft light and a sound bed that feels expensive.","did":["Measured pacing and lingering detail shots to signal luxury","Deep, cinematic grade with controlled highlights on the paintwork","Sound design built around the engine and cabin silence"],"tools":["Premiere Pro","DaVinci Resolve","Audition"]},
+      "V12":{"name":"Built to move","client":"BMW","cat":"Automotive edit","role":"Edit · colour · sound design","idea":"The opposite energy to luxury: performance. Every cut hits on the beat, so the car feels as fast on screen as it does on the road.","did":["Beat-matched cutting with speed ramps on every gear change","High-contrast grade to make the lines and reflections pop","Layered engine, whoosh and impact SFX for weight and speed"],"tools":["Premiere Pro","After Effects","Audition"]},
+      "V13":{"name":"Wild, up close","client":"Nature","cat":"Short-form story","role":"Edit · sound · colour","idea":"An edit that treats wildlife like characters, with each shot chosen for expression and movement to build a small story in under a minute.","did":["Story-driven selects: built an arc from raw clips","Natural, rich grade to bring out texture and colour","Music and ambient sound mixed for emotion"],"tools":["Premiere Pro","DaVinci Resolve","Audition"]},
+      "V14":{"name":"Nepal, in motion","client":"Travel","cat":"Travel film","role":"Shoot · edit · colour","idea":"A love letter to home: mountains, streets and people cut together to make viewers feel the place, not just see it.","did":["Shot and selected footage for scale, culture and atmosphere","Rhythmic montage paced to the music’s build","Warm, filmic grade to unify footage from different conditions"],"tools":["Premiere Pro","DaVinci Resolve","Lightroom"]},
+      "V15":{"name":"Type in motion","client":"Studio","cat":"Motion graphics","role":"Motion design · animation","idea":"A pure motion piece exploring how type, shape and timing alone can carry energy and meaning, with no footage to lean on.","did":["Designed and animated the full graphic system from scratch","Custom easing and timing so every move feels intentional","Sound-synced transitions for a polished, broadcast-ready finish"],"tools":["After Effects","Illustrator","Premiere Pro"]},
+      "V16":{"name":"Riding the trend","client":"Social","cat":"TikTok / Reels","role":"Edit · trend strategy","idea":"Trends move in days. The idea was to jump on a format fast and make it feel native to the platform while giving it a sharper edit than the rest of the feed.","did":["Matched the trend’s audio and beat structure, then added a twist","Fast cuts and on-screen text tuned for retention","Part of a freelance TikTok run that reached 270K+ views across 12 videos"],"tools":["Premiere Pro","After Effects"]},
+      "V17":{"name":"Your window to the markets","client":"LP Financial Exchange","cat":"Brand campaign","role":"Edit · motion graphics","idea":"“A better view changes how you see everything.” The window became the metaphor: a frame that opens onto the world of finance, inviting the viewer to look closer.","did":["Built the window motif into transitions and framing throughout","Clean motion graphics for the tagline, URL and call-to-action","Delivered as paid-social and organic cuts across formats"],"tools":["Premiere Pro","After Effects","Photoshop"]},
+      "V18":{"name":"Behind the scenes","client":"Event","cat":"Event recap","role":"Shoot · edit","idea":"A day-in-the-life recap that captures the energy of being there: fast, candid and built to make people wish they’d come.","did":["Shot run-and-gun coverage across the day","Turned hours of raw footage into a tight, energetic recap","Music-led pacing with quick captions for context"],"tools":["Premiere Pro","Audition"]},
+      "V19":{"name":"The full picture","client":"Wall Street Junior","cat":"Long-form edit","role":"Post-production lead","idea":"A longer-form piece where story structure matters more than speed. Complex ideas are laid out step by step, so the viewer leaves understanding the whole picture.","did":["Structured the narrative from raw footage to a final timeline","Motion graphics and lower-thirds to support key explanations","Colour, audio clean-up and final mix for a broadcast-quality finish"],"tools":["Premiere Pro","After Effects","Audition"]},
+      "G1":{"name":"Apply now","client":"Recruitment","cat":"Social campaign","role":"Design · art direction","idea":"A hiring post that has to stop the scroll and drive one action. Bold hierarchy and a single, unmissable call-to-action.","did":["Type-led layout with one clear focal point","Brand colours pushed for contrast in the feed","Exported in sizes for every platform"],"tools":["Photoshop","Illustrator"]},
+      "G2":{"name":"Buy 2, get 1","client":"Funded trading accounts","cat":"Promotional offer","role":"Design · copy layout","idea":"An offer post where the deal has to be understood in under a second. The number is the hero; everything else supports it.","did":["Offer-first hierarchy so the value reads instantly","Premium dark palette to fit the trading audience","Built as a template for future promotions"],"tools":["Photoshop","Illustrator"]},
+      "G3":{"name":"Learn. Manage risk. Move forward.","client":"Trading education","cat":"Brand campaign","role":"Design · art direction","idea":"A three-beat message that reframes trading as a discipline, not a gamble. Calm, confident visuals to build trust.","did":["Three-part typographic rhythm mirroring the message","Restrained palette for a credible, professional tone","Consistent with the wider campaign system"],"tools":["Photoshop","Illustrator"]},
+      "G4":{"name":"Brand in the feed","client":"LP Financial Exchange","cat":"Social design","role":"Design · art direction","idea":"Social creative that keeps a financial brand recognisable at a glance across every post.","did":["Applied the brand system to a social-first layout","Clear hierarchy for headline, value and call-to-action","Delivered as a set of feed and story sizes"],"tools":["Photoshop","Illustrator"]},
+      "G5":{"name":"Macaron","client":"Food & beverage","cat":"Product poster","role":"Design · retouch","idea":"A product poster that makes you hungry: colour, texture and negative space doing all the work.","did":["Product retouching for colour and crisp texture","Pastel palette pulled straight from the product","Minimal type so the visual leads"],"tools":["Photoshop","Lightroom"]},
+      "G6":{"name":"Meshki","client":"Fashion","cat":"Campaign poster","role":"Design · art direction","idea":"A fashion visual with editorial attitude, styled the way a magazine spread would be, not an ad.","did":["Editorial layout with bold, fashion-led typography","Image retouching and tonal grade for a luxe finish","Balanced composition between model, product and brand"],"tools":["Photoshop","Illustrator"]},
+      "G7":{"name":"New Balance","client":"Sportswear","cat":"Product poster","role":"Design · art direction","idea":"A sneaker poster that puts the shoe on a pedestal, with dynamic composition and type to suggest movement in a still frame.","did":["Product cut-out, cleanup and lighting enhancement","Dynamic layout with type interacting with the product","Colour palette built around the shoe colourway"],"tools":["Photoshop","Illustrator"]},
+      "G8":{"name":"Piña Colada","client":"Food & beverage","cat":"Menu poster","role":"Design · retouch","idea":"A drink poster that sells a feeling of summer in one glance: fresh, bright and tropical.","did":["Drink retouching for condensation, colour and freshness","Tropical palette and playful type","Built for both print menu and social use"],"tools":["Photoshop","Illustrator"]},
+      "G9":{"name":"Porsche","client":"Automotive","cat":"Poster design","role":"Design · retouch","idea":"An automotive poster that treats the car like a piece of design, with clean lines, strong light and precise type.","did":["Car retouching for reflections and paint depth","Grid-based, precise typographic layout","High-contrast finish for a premium feel"],"tools":["Photoshop","Illustrator"]},
+      "G10":{"name":"Shrimp Bruschetta","client":"Food & beverage","cat":"Menu poster","role":"Design · retouch","idea":"A dish poster designed to work hard on a menu board: appetising, legible and on-brand.","did":["Food retouching for colour, texture and freshness","Clear hierarchy for dish name and details","Layout system reusable across the menu range"],"tools":["Photoshop","Lightroom"]},
+      "G11":{"name":"17 trades in a day. Too many.","client":"Trading education","cat":"Social campaign","role":"Design · concept","idea":"A relatable, slightly provocative hook aimed at over-trading. It earns a smile first, then delivers the lesson.","did":["Concept-led headline as the hero of the layout","Bold type and contrast to stop the scroll","Part of a wider educational post series"],"tools":["Photoshop","Illustrator"]},
+      "G12":{"name":"Zayn","client":"Music","cat":"Artist poster","role":"Design · art direction","idea":"An artist poster with album-cover energy, moody and expressive, built around the portrait.","did":["Portrait retouching and mood-driven colour grade","Expressive typography layered with the image","Composed to work as both poster and social post"],"tools":["Photoshop","Illustrator"]}};
+    const info = el => {
+      const vid = el.dataset.type === 'drive';
+      return Object.assign({ client: vid ? 'Video' : 'Graphic design', role: vid ? 'edit · motion · sound' : 'art direction · design',
+        idea: 'the brief and the idea behind this piece — what it needed to say, who it was for, and the angle you took. two or three lines.',
+        did: vid ? ['story & pacing — how you structured the cut', 'motion & titles — what you built on top', 'colour & sound — the finish'] : ['concept — the visual idea', 'layout & type — how it was composed', 'final art — retouch, export, delivery'],
+        tools: vid ? ['Premiere Pro', 'After Effects', 'Audition'] : ['Photoshop', 'Illustrator'] }, INFO[el.dataset.title] || {});
+    };
+    const tile = el => el.firstElementChild;
+    const group = el => [...el.parentElement.children].filter(n => n.hasAttribute('data-ic'));
+    const ratioOf = el => { if (el.dataset.ratio) return +el.dataset.ratio; const im = tile(el).querySelector('img'); return im && im.naturalWidth ? im.naturalWidth / im.naturalHeight : (el.dataset.type === 'drive' ? 9 / 16 : 0.8); };
+    const fmtOf = (el, r) => { const vid = el.dataset.type === 'drive'; const f = r < 0.7 ? ['Vertical', '9:16'] : r < 0.9 ? ['Portrait', '4:5'] : r < 1.15 ? ['Square', '1:1'] : ['Horizontal', '16:9']; return (vid ? f[0] + ' video' : f[0] + ' artwork') + ' · ' + f[1]; };
+    const layout = r => {
+      const W = innerWidth, H = innerHeight;
+      const stacked = W < 860 && W / H < 1.25, compact = W < 860 || H < 560;
+      this.vMode = stacked ? 'stack' : compact ? 'compact' : 'wide';
+      if (stacked) {
+        const pd = W < 400 ? 10 : 16, gap = 10, maxH = H * (r >= 1 ? 0.42 : 0.5);
+        let mw = W - pd * 2, mh = mw / r; if (mh > maxH) { mh = maxH; mw = mh * r; }
+        return { m: [(W - mw) / 2, pd, mw, mh], p: [pd, pd + mh + gap, W - pd * 2, H - mh - pd * 2 - gap] };
+      }
+      if (compact) {
+        const pd = 12, gap = 12, PW = Math.max(260, Math.min(400, W * 0.44)), aw = W - pd * 2 - PW - gap, ah = H - pd * 2;
+        let mh = ah, mw = mh * r; if (mw > aw) { mw = aw; mh = mw / r; }
+        const x0 = (W - (mw + gap + PW)) / 2;
+        return { m: [x0, (H - mh) / 2, mw, mh], p: [x0 + mw + gap, pd, PW, ah] };
+      }
+      const pd = Math.max(24, H * 0.05), gap = 20, PW = Math.max(360, Math.min(W > 2000 ? 560 : 460, W * 0.3));
+      const aw = W - pd * 2 - PW - gap, ah = H - pd * 2;
+      let mh = ah, mw = mh * r; if (mw > aw) { mw = aw; mh = mw / r; }
+      const x0 = (W - (mw + gap + PW)) / 2, ph = Math.min(ah, Math.max(mh, 580));
+      return { m: [x0, (H - mh) / 2, mw, mh], p: [x0 + mw + gap, (H - ph) / 2, PW, ph] };
+    };
+    const off = () => this.vMode === 'stack' ? 'translateY(48px)' : 'translateX(56px)';
+    const dens = () => {
+      const m = this.vMode, hd = V.panel.firstElementChild, ft = V.panel.lastElementChild, sm = m !== 'wide';
+      hd.style.padding = sm ? '12px 14px 12px 18px' : '18px 22px 18px 26px';
+      V.body.style.padding = sm ? '20px 18px 18px' : '30px 26px 26px'; V.body.style.gap = sm ? '20px' : '28px';
+      V.title.style.fontSize = sm ? 'clamp(30px,8vw,44px)' : 'clamp(40px,3.6vw,60px)';
+      [...ft.children].forEach((b, k) => { b.style.padding = sm ? (k ? '12px 18px 14px 14px' : '12px 14px 14px 18px') : (k ? '16px 26px 18px 22px' : '16px 22px 18px 26px'); });
+      V.panel.style.borderRadius = sm ? '14px' : '16px';
+    };
+    const place = (n, b) => { n.style.left = b[0] + 'px'; n.style.top = b[1] + 'px'; n.style.width = b[2] + 'px'; n.style.height = b[3] + 'px'; };
+    const fill = el => {
+      const list = group(el), i = list.indexOf(el), d = info(el), n = list.length, p2 = s => String(s).padStart(2, '0');
+      V.cat.textContent = el.dataset.type === 'drive' ? '[ VIDEO ]' : '[ GRAPHIC DESIGN ]';
+      V.idx.textContent = p2(i + 1) + ' / ' + p2(n);
+      V.title.textContent = d.name || el.dataset.title; V.sub.textContent = d.cat ? d.client + ' · ' + d.cat : d.client;
+      V.fmt.textContent = fmtOf(el, ratioOf(el)); V.role.textContent = d.role; V.idea.textContent = d.idea;
+      V.did.innerHTML = '';
+      d.did.forEach((t, k) => { const li = document.createElement('li'); li.style.cssText = 'display:grid;grid-template-columns:30px minmax(0,1fr);gap:6px;padding:11px 0;border-top:1px solid rgba(29,29,27,.1)';
+        li.innerHTML = '<span style="font-family:Roboto Mono,monospace;font-size:11px;color:#396000;padding-top:3px">' + p2(k + 1) + '</span><span></span>'; li.lastChild.textContent = t; V.did.appendChild(li); });
+      V.tools.innerHTML = '';
+      d.tools.forEach(t => { const c = TOOLS[t]; const s = document.createElement('span'); s.style.cssText = 'display:flex;align-items:center;gap:8px;padding:4px 10px 4px 4px;border-radius:999px;background:rgba(29,29,27,.06);font-size:12px';
+        s.innerHTML = (c ? '<img src="assets/tools/' + c + '.png" alt="" style="width:24px;height:24px;border-radius:23%;display:block">' : '') + '<span></span>'; s.lastChild.textContent = t; V.tools.appendChild(s); });
+      V.prevT.textContent = list[(i - 1 + n) % n].dataset.title; V.nextT.textContent = list[(i + 1) % n].dataset.title;
+      V.body.scrollTop = 0;
+    };
+    const reveal = () => {
+      const rs = [...V.panel.querySelectorAll('[data-vr]')];
+      rs.forEach(n => { n.style.transition = 'none'; n.style.opacity = 0; n.style.transform = 'translateY(18px)'; });
+      V.panel.offsetWidth;
+      rs.forEach((n, k) => { const dl = (0.22 + k * 0.07) + 's'; n.style.transition = 'opacity .7s ease ' + dl + ', transform .9s ' + E + ' ' + dl; n.style.opacity = 1; n.style.transform = 'none'; });
+    };
+    const setPoster = el => {
+      V.media.innerHTML = '';
+      const p = document.createElement('img'); p.dataset.poster = '1'; p.alt = ''; p.src = tile(el).querySelector('img').src;
+      const ti = tile(el).querySelector('img'), cr = ti && ti.naturalWidth ? ti.naturalWidth / ti.naturalHeight : 0, vr = +el.dataset.ratio || 0;
+      const fitM = vr && cr && Math.abs(cr - vr) / vr > 0.06 ? 'contain' : 'cover';
+      p.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:' + fitM + ';background:#000;display:block'; V.media.appendChild(p);
+    };
+    const warm = new Set();
+    document.querySelectorAll('[data-ic][data-type="img"]').forEach(el => el.addEventListener('pointerenter', () => { if (warm.has(el)) return; warm.add(el); const i = new Image(); i.decoding = 'async'; i.src = el.dataset.src; }, { passive: true }));
+    const loadFull = el => {
+      if (el.dataset.type === 'drive') { const pl = this.player(el.dataset.src, el.dataset.local); V.media.appendChild(pl); return; }
+      const im = new Image(); im.alt = el.dataset.title;
+      im.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .6s ease';
+      im.onload = () => { if (V.media.contains(im)) requestAnimationFrame(() => { im.style.opacity = 1; }); };
+      im.src = el.dataset.src; V.media.appendChild(im);
+    };
+    let cur = null, hidden = null, tm = 0;
+    const hideTile = el => { if (hidden && hidden !== el) tile(hidden).style.visibility = ''; hidden = el; if (el) tile(el).style.visibility = 'hidden'; };
+    const open = el => {
+      clearTimeout(tm); cur = el;
+      const L = layout(ratioOf(el)), r0 = tile(el).getBoundingClientRect();
+      V.root.style.visibility = 'visible'; V.root.style.pointerEvents = 'auto';
+      V.media.style.transition = 'none'; V.media.style.opacity = 1; V.media.style.borderRadius = '2px'; place(V.media, [r0.left, r0.top, r0.width, r0.height]);
+      setPoster(el); hideTile(el);
+      V.panel.style.transition = 'none'; place(V.panel, L.p); V.panel.style.opacity = 0; V.panel.style.transform = off(); dens();
+      fill(el); V.root.offsetWidth;
+      V.media.style.transition = MT; place(V.media, L.m); V.media.style.borderRadius = '16px';
+      V.bd.style.opacity = 1;
+      V.panel.style.transition = 'opacity .6s ease .16s, transform 1s ' + E + ' .16s'; V.panel.style.opacity = 1; V.panel.style.transform = 'none';
+      reveal();
+      tm = setTimeout(() => { if (cur === el) loadFull(el); }, 760);
+    };
+    const close = () => {
+      if (!cur) return; const el = cur; cur = null; clearTimeout(tm);
+      const v = V.media.querySelector('video'); if (v) v.pause();
+      [...V.media.children].forEach(n => { if (!n.dataset.poster) { n.style.transition = 'opacity .25s ease'; n.style.opacity = 0; } });
+      const r0 = tile(el).getBoundingClientRect();
+      V.panel.style.transition = 'opacity .35s ease, transform .6s ' + E; V.panel.style.opacity = 0; V.panel.style.transform = off();
+      V.media.style.transition = MT; place(V.media, [r0.left, r0.top, r0.width, r0.height]); V.media.style.borderRadius = '2px';
+      V.bd.style.opacity = 0; V.root.style.pointerEvents = 'none';
+      tm = setTimeout(() => { hideTile(null); V.root.style.visibility = 'hidden'; V.media.innerHTML = ''; }, 820);
+    };
+    const go = d => {
+      if (!cur) return; clearTimeout(tm);
+      const list = group(cur), el = list[(list.indexOf(cur) + d + list.length) % list.length];
+      const v = V.media.querySelector('video'); if (v) v.pause();
+      cur = el; hideTile(el);
+      V.media.style.transition = 'opacity .25s ease'; V.media.style.opacity = 0;
+      tm = setTimeout(() => {
+        if (cur !== el) return;
+        const L = layout(ratioOf(el)); setPoster(el);
+        V.media.style.transition = 'none'; place(V.media, L.m); V.panel.style.transition = 'none'; place(V.panel, L.p); dens(); V.media.offsetWidth;
+        V.media.style.transition = 'opacity .5s ease'; V.media.style.opacity = 1;
+        fill(el); reveal();
+        tm = setTimeout(() => { if (cur === el) loadFull(el); }, 380);
+      }, 260);
+    };
+    document.querySelectorAll('[data-ic]').forEach(el => el.addEventListener('click', e => { e.stopPropagation(); open(el); }));
+    V.bd.addEventListener('click', close);
+    let sw = null;
+    V.media.addEventListener('touchstart', e => { const t = e.touches[0]; sw = e.touches.length === 1 && !e.target.closest('button,[data-track]') ? { x: t.clientX, y: t.clientY, t: performance.now() } : null; }, { passive: true });
+    V.media.addEventListener('touchend', e => { if (!sw || !cur) return; const t = e.changedTouches[0], dx = t.clientX - sw.x, dy = t.clientY - sw.y, fast = performance.now() - sw.t < 600; sw = null;
+      if (!fast) return; if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) go(dx < 0 ? 1 : -1); else if (dy > 90 && Math.abs(dy) > Math.abs(dx) * 1.4) close(); }, { passive: true });
+    q('[data-vclose]').addEventListener('click', close);
+    q('[data-vprev]').addEventListener('click', () => go(-1));
+    q('[data-vnext]').addEventListener('click', () => go(1));
+    V.root.addEventListener('wheel', e => { if (!V.body.contains(e.target)) e.preventDefault(); }, { passive: false });
+    V.root.addEventListener('touchmove', e => { if (!V.body.contains(e.target)) e.preventDefault(); }, { passive: false });
+    this.onKey = e => { if (!cur) return; if (e.key === 'Escape') close(); if (e.key === 'ArrowRight') go(1); if (e.key === 'ArrowLeft') go(-1); };
+    window.addEventListener('keydown', this.onKey);
+    this.onVResize = () => { if (!cur) return; cancelAnimationFrame(this.vrr); this.vrr = requestAnimationFrame(() => { if (!cur) return; const L = layout(ratioOf(cur)); V.media.style.transition = 'none'; V.panel.style.transition = 'none'; place(V.media, L.m); place(V.panel, L.p); V.panel.style.transform = 'none'; dens(); }); };
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', this.onVResize);
+    window.addEventListener('resize', this.onVResize);
+  }
+  player(id, local) {
+    const G = '#396000', C = '#F3F2EA', INK = '#1D1D1B';
+    const W = Math.min(innerWidth * 0.9, 1400), Hh = Math.min(innerHeight * 0.76, W * 0.5625);
+    const mk = (tag, css, html) => { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html) e.innerHTML = html; return e; };
+    const ico = { play: '<svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>',
+      pause: '<svg viewBox="0 0 24 24" width="100%" height="100%"><rect x="6.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="13.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/></svg>',
+      vol: '<svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a7.8 7.8 0 0 1 0 11" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>',
+      mute: '<svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+      fs: '<svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>' };
+    const wrap = mk('div', 'position:absolute;inset:0;background:transparent;overflow:hidden;cursor:none;font-family:"Roboto Mono",monospace;color:' + C);
+    const v = mk('video', 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:transparent');
+    v.playsInline = true; v.preload = 'auto'; v.autoplay = true;
+    const driveSrc = 'https://drive.usercontent.google.com/download?id=' + id + '&export=download&confirm=t';
+    let onLocal = !!local; v.src = local || driveSrc;
+    const spin = mk('div', 'position:absolute;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:2px solid rgba(243,242,234,.18);border-top-color:' + C + ';animation:spin .9s linear infinite');
+    if (!document.getElementById('pl-kf')) { const st = mk('style'); st.id = 'pl-kf'; st.textContent = '@keyframes spin{to{transform:rotate(360deg)}}'; document.head.appendChild(st); }
+    const big = mk('button', 'position:absolute;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border:0;border-radius:50%;background:' + C + ';color:' + G + ';padding:24px 22px 24px 28px;cursor:pointer;box-shadow:0 12px 40px rgba(0,0,0,.35);transition:transform .35s cubic-bezier(.2,.9,.25,1.3),opacity .3s ease;opacity:0;transform:scale(.6);pointer-events:none', ico.play);
+    const bar = mk('div', 'position:absolute;left:0;right:0;bottom:0;padding:40px 22px 18px;background:linear-gradient(to top,rgba(29,29,27,.82),rgba(29,29,27,0));display:flex;flex-direction:column;gap:12px;transition:opacity .35s ease,transform .35s ease;cursor:default');
+    const track = mk('div', 'position:relative;height:16px;cursor:pointer;display:flex;align-items:center');
+    const rail = mk('div', 'position:absolute;left:0;right:0;height:3px;border-radius:2px;background:rgba(243,242,234,.22);transition:height .2s ease');
+    const buf = mk('div', 'position:absolute;left:0;height:3px;border-radius:2px;background:rgba(243,242,234,.35);width:0;transition:height .2s ease');
+    const prog = mk('div', 'position:absolute;left:0;height:3px;border-radius:2px;background:' + C + ';width:0;transition:height .2s ease');
+    const knob = mk('div', 'position:absolute;width:13px;height:13px;margin-left:-6.5px;border-radius:50%;background:' + C + ';box-shadow:0 0 0 4px rgba(57,96,0,.55);left:0;transform:scale(0);transition:transform .2s ease');
+    track.append(rail, buf, prog, knob);
+    const row = mk('div', 'display:flex;align-items:center;gap:16px;font-size:12px;letter-spacing:.06em');
+    const btn = html => mk('button', 'width:30px;height:30px;padding:4px;border:0;border-radius:50%;background:transparent;color:' + C + ';cursor:pointer;flex:none;transition:background .2s ease,color .2s ease', html);
+    const pp = btn(ico.pause); pp.style.cssText += ';width:38px;height:38px;padding:9px;background:' + C + ';color:' + G;
+    const time = mk('span', 'font-variant-numeric:tabular-nums;opacity:.9', '0:00 <span style="opacity:.45">/ 0:00</span>');
+    const sp = mk('span', 'flex:1');
+    const vb = btn(ico.vol), fb = btn(ico.fs);
+    [vb, fb].forEach(b => { b.onmouseenter = () => { b.style.background = 'rgba(243,242,234,.14)'; }; b.onmouseleave = () => { b.style.background = 'transparent'; }; });
+    row.append(pp, time, sp, vb, fb); bar.append(track, row);
+    wrap.append(v, spin, big, bar);
+    track.dataset.track = '1';
+    const coarse = window.matchMedia && matchMedia('(pointer:coarse)').matches;
+    const fit = () => {
+      const w = wrap.clientWidth || 400, sm = w < 420, xs = w < 300;
+      bar.style.padding = sm ? '28px 12px 10px' : '40px 22px 18px'; bar.style.gap = sm ? '8px' : '12px';
+      row.style.gap = xs ? '6px' : sm ? '10px' : '16px'; row.style.fontSize = sm ? '11px' : '12px';
+      const bs = coarse ? 40 : sm ? 30 : 30; [vb, fb].forEach(b => { b.style.width = b.style.height = bs + 'px'; b.style.padding = (coarse ? 9 : 4) + 'px'; });
+      const ps = coarse ? 42 : sm ? 34 : 38; pp.style.width = pp.style.height = ps + 'px';
+      const bg = xs ? 56 : sm ? 64 : 84; big.style.width = big.style.height = bg + 'px'; big.style.margin = (-bg / 2) + 'px 0 0 ' + (-bg / 2) + 'px'; big.style.padding = Math.round(bg * .29) + 'px ' + Math.round(bg * .26) + 'px ' + Math.round(bg * .29) + 'px ' + Math.round(bg * .33) + 'px';
+      time.style.display = xs ? 'none' : '';
+      if (coarse) { [rail, buf, prog].forEach(x => { x.style.height = '4px'; }); knob.style.transform = 'scale(.85)'; track.style.height = '24px'; }
+    };
+    if (window.ResizeObserver) { const ro = new ResizeObserver(fit); ro.observe(wrap); } fit();
+    const fmt = s => { s = Math.max(0, s | 0); return (s / 60 | 0) + ':' + String(s % 60).padStart(2, '0'); };
+    const sync = () => {
+      const p = v.paused; pp.innerHTML = p ? ico.play : ico.pause; pp.style.padding = p ? '9px 8px 9px 10px' : '9px';
+      big.style.opacity = p && v.readyState > 1 ? 1 : 0; big.style.transform = p && v.readyState > 1 ? 'scale(1)' : 'scale(.6)'; big.style.pointerEvents = p ? 'auto' : 'none';
+    };
+    const tick = () => {
+      const d = v.duration || 0, f = d ? v.currentTime / d : 0;
+      prog.style.width = f * 100 + '%'; knob.style.left = f * 100 + '%';
+      if (d && v.buffered.length) buf.style.width = v.buffered.end(v.buffered.length - 1) / d * 100 + '%';
+      time.innerHTML = fmt(v.currentTime) + ' <span style="opacity:.45">/ ' + fmt(d) + '</span>';
+    };
+    const toggle = () => { v.paused ? v.play().catch(() => {}) : v.pause(); };
+    v.addEventListener('play', sync); v.addEventListener('pause', sync); v.addEventListener('timeupdate', tick); v.addEventListener('progress', tick);
+    v.addEventListener('waiting', () => { spin.style.display = 'block'; }); v.addEventListener('playing', () => { spin.style.display = 'none'; sync(); });
+    v.addEventListener('canplay', () => { spin.style.display = 'none'; sync(); });
+    v.addEventListener('loadedmetadata', tick);
+    pp.onclick = big.onclick = e => { e.stopPropagation(); toggle(); };
+    v.onclick = () => { if (coarse && bar.style.opacity === '0') { wake(); return; } toggle(); };
+    vb.onclick = () => { v.muted = !v.muted; vb.innerHTML = v.muted ? ico.mute : ico.vol; };
+    fb.onclick = () => { if (document.fullscreenElement) { document.exitFullscreen().catch(() => {}); return; } if (wrap.requestFullscreen) wrap.requestFullscreen().catch(() => { if (v.webkitEnterFullscreen) v.webkitEnterFullscreen(); }); else if (v.webkitEnterFullscreen) v.webkitEnterFullscreen(); };
+    const seek = e => { const r = track.getBoundingClientRect(); const f = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)); if (v.duration) v.currentTime = f * v.duration; tick(); };
+    let drag = false;
+    track.onpointerdown = e => { drag = true; track.setPointerCapture(e.pointerId); seek(e); };
+    track.onpointermove = e => { if (drag) seek(e); };
+    track.onpointerup = () => { drag = false; };
+    track.style.touchAction = 'none';
+    track.onmouseenter = () => { if (coarse) return;  [rail, buf, prog].forEach(x => { x.style.height = '5px'; }); knob.style.transform = 'scale(1)'; };
+    track.onmouseleave = () => { if (coarse) return;  [rail, buf, prog].forEach(x => { x.style.height = '3px'; }); knob.style.transform = 'scale(0)'; };
+    let idle;
+    const wake = () => { bar.style.opacity = 1; bar.style.transform = 'none'; wrap.style.cursor = 'default'; clearTimeout(idle); idle = setTimeout(() => { if (!v.paused && !drag) { bar.style.opacity = 0; bar.style.transform = 'translateY(8px)'; wrap.style.cursor = 'none'; } }, 2200); };
+    wrap.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') wake(); }); wrap.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse' && bar.style.opacity !== '0') wake(); }); wake();
+    this.onPlayerKey && window.removeEventListener('keydown', this.onPlayerKey);
+    this.onPlayerKey = e => { if (!wrap.isConnected) return; if (e.code === 'Space') { e.preventDefault(); toggle(); wake(); } };
+    window.addEventListener('keydown', this.onPlayerKey);
+    let ok = false, fell = false; v.addEventListener('loadedmetadata', () => { ok = true; });
+    const fallback = () => {
+      if (ok || fell || !wrap.isConnected) return;
+      fell = true; clearTimeout(fbT); v.removeAttribute('src'); v.load();
+      wrap.innerHTML = ''; wrap.style.cursor = 'default'; wrap.style.background = INK;
+      const f = mk('iframe', 'position:absolute;inset:0;width:100%;height:100%;border:0');
+      f.src = 'https://drive.google.com/file/d/' + id + '/preview'; f.allow = 'autoplay; fullscreen'; wrap.appendChild(f);
+    };
+    v.addEventListener('error', () => { if (onLocal) { onLocal = false; v.src = driveSrc; v.load(); v.play().catch(() => {}); return; } fallback(); });
+    let fbT = setTimeout(function chk() { if (onLocal && !ok) { fbT = setTimeout(chk, 9000); return; } fallback(); }, 9000);
+    return wrap;
+  }
+  componentWillUnmount() { window.removeEventListener('wheel', this.onWheelLock); window.removeEventListener('touchmove', this.onWheelLock); document.removeEventListener('pointerdown', this.onSkDown, true); window.removeEventListener('keydown', this.onSkKey); window.removeEventListener('scroll', this.onScroll, { capture: true }); window.removeEventListener('resize', this.onResize); window.removeEventListener('orientationchange', this.onResize); window.removeEventListener('resize', this.onVResize); if (window.visualViewport) window.visualViewport.removeEventListener('resize', this.onVResize); this.onPlayerKey && window.removeEventListener('keydown', this.onPlayerKey); window.removeEventListener('keydown', this.onKey); cancelAnimationFrame(this.draf); window.removeEventListener('pointermove', this.onMove); cancelAnimationFrame(this.raf); if (this.fx) cancelAnimationFrame(this.fx.raf); }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
